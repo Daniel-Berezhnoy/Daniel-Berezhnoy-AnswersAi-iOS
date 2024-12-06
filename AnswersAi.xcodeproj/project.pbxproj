@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B93B38C62D03C5C7006EAD0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93B38C02D03C5C7006EAD0B /* Preview Assets.xcassets */; };
 		B93B38C72D03C5C7006EAD0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93B38C32D03C5C7006EAD0B /* Assets.xcassets */; };
 		B93B38C82D03C5C7006EAD0B /* AnswersAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */; };
 		B93B38C92D03C5C7006EAD0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B38C42D03C5C7006EAD0B /* ContentView.swift */; };
@@ -15,7 +14,6 @@
 
 /* Begin PBXFileReference section */
 		B93B38AF2D03C5B5006EAD0B /* AnswersAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnswersAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B93B38C02D03C5C7006EAD0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersAiApp.swift; sourceTree = "<group>"; };
 		B93B38C32D03C5C7006EAD0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B93B38C42D03C5C7006EAD0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,21 +46,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B93B38C12D03C5C7006EAD0B /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				B93B38C02D03C5C7006EAD0B /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		B93B38C52D03C5C7006EAD0B /* AnswersAi */ = {
 			isa = PBXGroup;
 			children = (
 				B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */,
 				B93B38C42D03C5C7006EAD0B /* ContentView.swift */,
 				B93B38C32D03C5C7006EAD0B /* Assets.xcassets */,
-				B93B38C12D03C5C7006EAD0B /* Preview Content */,
 			);
 			path = AnswersAi;
 			sourceTree = "<group>";
@@ -128,7 +117,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B93B38C62D03C5C7006EAD0B /* Preview Assets.xcassets in Resources */,
 				B93B38C72D03C5C7006EAD0B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,7 +262,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AnswersAi/Preview Content\"";
 				DEVELOPMENT_TEAM = 6ADU7T5Q7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -308,7 +295,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AnswersAi/Preview Content\"";
 				DEVELOPMENT_TEAM = 6ADU7T5Q7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
