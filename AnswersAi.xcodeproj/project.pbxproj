@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B93B38C62D03C5C7006EAD0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93B38C02D03C5C7006EAD0B /* Preview Assets.xcassets */; };
+		B93B38C72D03C5C7006EAD0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93B38C32D03C5C7006EAD0B /* Assets.xcassets */; };
+		B93B38C82D03C5C7006EAD0B /* AnswersAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */; };
+		B93B38C92D03C5C7006EAD0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B38C42D03C5C7006EAD0B /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B93B38AF2D03C5B5006EAD0B /* AnswersAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnswersAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93B38C02D03C5C7006EAD0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersAiApp.swift; sourceTree = "<group>"; };
+		B93B38C32D03C5C7006EAD0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B93B38C42D03C5C7006EAD0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B93B38B12D03C5B6006EAD0B /* AnswersAi */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AnswersAi;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B93B38AC2D03C5B5006EAD0B /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		B93B38A62D03C5B5006EAD0B = {
 			isa = PBXGroup;
 			children = (
-				B93B38B12D03C5B6006EAD0B /* AnswersAi */,
+				B93B38C52D03C5C7006EAD0B /* AnswersAi */,
 				B93B38B02D03C5B5006EAD0B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,25 @@
 				B93B38AF2D03C5B5006EAD0B /* AnswersAi.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B93B38C12D03C5C7006EAD0B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B93B38C02D03C5C7006EAD0B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B93B38C52D03C5C7006EAD0B /* AnswersAi */ = {
+			isa = PBXGroup;
+			children = (
+				B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */,
+				B93B38C42D03C5C7006EAD0B /* ContentView.swift */,
+				B93B38C32D03C5C7006EAD0B /* Assets.xcassets */,
+				B93B38C12D03C5C7006EAD0B /* Preview Content */,
+			);
+			path = AnswersAi;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +81,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B93B38B12D03C5B6006EAD0B /* AnswersAi */,
 			);
 			name = AnswersAi;
 			packageProductDependencies = (
@@ -109,6 +128,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93B38C62D03C5C7006EAD0B /* Preview Assets.xcassets in Resources */,
+				B93B38C72D03C5C7006EAD0B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93B38C82D03C5C7006EAD0B /* AnswersAiApp.swift in Sources */,
+				B93B38C92D03C5C7006EAD0B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +281,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -267,9 +291,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.AnswersAi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -287,8 +315,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,9 +325,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.daniel.AnswersAi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
