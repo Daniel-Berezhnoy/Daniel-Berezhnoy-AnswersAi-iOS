@@ -10,7 +10,9 @@
 		B93B38C72D03C5C7006EAD0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93B38C32D03C5C7006EAD0B /* Assets.xcassets */; };
 		B93B38C82D03C5C7006EAD0B /* AnswersAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */; };
 		B93B38C92D03C5C7006EAD0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B38C42D03C5C7006EAD0B /* ContentView.swift */; };
-		B96571452D0507A200959A86 /* AppStoreCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96571442D0507A200959A86 /* AppStoreCard.swift */; };
+		B96571452D0507A200959A86 /* AppStoreCardSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96571442D0507A200959A86 /* AppStoreCardSample.swift */; };
+		B965714A2D050A6500959A86 /* TodayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96571492D050A6500959A86 /* TodayCard.swift */; };
+		B965714C2D05166200959A86 /* BottomBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965714B2D05166200959A86 /* BottomBlur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +20,9 @@
 		B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersAiApp.swift; sourceTree = "<group>"; };
 		B93B38C32D03C5C7006EAD0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B93B38C42D03C5C7006EAD0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B96571442D0507A200959A86 /* AppStoreCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCard.swift; sourceTree = "<group>"; };
+		B96571442D0507A200959A86 /* AppStoreCardSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreCardSample.swift; sourceTree = "<group>"; };
+		B96571492D050A6500959A86 /* TodayCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCard.swift; sourceTree = "<group>"; };
+		B965714B2D05166200959A86 /* BottomBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBlur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,9 @@
 		B96571462D0509A800959A86 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B96571442D0507A200959A86 /* AppStoreCard.swift */,
+				B96571442D0507A200959A86 /* AppStoreCardSample.swift */,
+				B96571492D050A6500959A86 /* TodayCard.swift */,
+				B965714B2D05166200959A86 /* BottomBlur.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B93B38C82D03C5C7006EAD0B /* AnswersAiApp.swift in Sources */,
+				B965714C2D05166200959A86 /* BottomBlur.swift in Sources */,
+				B965714A2D050A6500959A86 /* TodayCard.swift in Sources */,
 				B93B38C92D03C5C7006EAD0B /* ContentView.swift in Sources */,
-				B96571452D0507A200959A86 /* AppStoreCard.swift in Sources */,
+				B96571452D0507A200959A86 /* AppStoreCardSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

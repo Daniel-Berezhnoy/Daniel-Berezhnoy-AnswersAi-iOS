@@ -1,5 +1,5 @@
 //
-//  AppStoreCard.swift
+//  AppStoreCardSample.swift
 //  AnswersAi
 //
 //  Created by Daniel Berezhnoy on 12/7/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppStoreCard: View {
+struct AppStoreCardSample: View {
     var category: String = "UTILITIES"
     var title: String = "Figma"
     var appName: String = "Figma"
@@ -116,7 +116,7 @@ struct RoundedCorner: Shape {
 // Example preview
 struct AppCardView_Previews: PreviewProvider {
     static var previews: some View {
-        AppStoreCard()
+        AppStoreCardSample()
             .previewLayout(.sizeThatFits)
             .padding()
     }
