@@ -10,6 +10,7 @@
 		B93B38C72D03C5C7006EAD0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B93B38C32D03C5C7006EAD0B /* Assets.xcassets */; };
 		B93B38C82D03C5C7006EAD0B /* AnswersAiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */; };
 		B93B38C92D03C5C7006EAD0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93B38C42D03C5C7006EAD0B /* ContentView.swift */; };
+		B96571452D0507A200959A86 /* AppCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96571442D0507A200959A86 /* AppCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswersAiApp.swift; sourceTree = "<group>"; };
 		B93B38C32D03C5C7006EAD0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B93B38C42D03C5C7006EAD0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B96571442D0507A200959A86 /* AppCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			children = (
 				B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */,
 				B93B38C42D03C5C7006EAD0B /* ContentView.swift */,
+				B96571442D0507A200959A86 /* AppCardView.swift */,
 				B93B38C32D03C5C7006EAD0B /* Assets.xcassets */,
 			);
 			path = AnswersAi;
@@ -130,6 +133,7 @@
 			files = (
 				B93B38C82D03C5C7006EAD0B /* AnswersAiApp.swift in Sources */,
 				B93B38C92D03C5C7006EAD0B /* ContentView.swift in Sources */,
+				B96571452D0507A200959A86 /* AppCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +269,7 @@
 				DEVELOPMENT_TEAM = 6ADU7T5Q7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Runna;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,6 +303,7 @@
 				DEVELOPMENT_TEAM = 6ADU7T5Q7V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Runna;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
