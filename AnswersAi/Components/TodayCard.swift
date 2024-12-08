@@ -9,23 +9,29 @@ import SwiftUI
 
 struct TodayCard: View {
     var body: some View {
-        ScrollView {
-            VStack {
-                imageBanner
-                Spacer()
-                appDetails
-            }
-            .background(Color(.systemGray5))
-            .clipShape(.rect(cornerRadius: 15))
-            .padding()
+        ZStack(alignment: .bottom) {
+            imageBanner
+            Spacer()
+            appDetails
         }
+        .background(Color(.systemGray6))
+        .clipShape(.rect(cornerRadius: 15))
+        
+        .padding(.horizontal, 20)
+        .padding(.vertical, 6)
     }
     
     private var imageBanner: some View {
-        Image(.peopleRunning)
-            .resizable()
-            .scaledToFill()
-            .overlay(alignment: .bottom) { BottomBlur() }
+        VStack {
+            Image(.peopleRunning)
+                .resizable()
+                .scaledToFit()
+                .overlay(alignment: .bottom) { BottomBlur() }
+            
+            Spacer()
+            
+        }
+        .frame(height: 290)
     }
     
     private var appDetails: some View {
@@ -63,4 +69,5 @@ struct TodayCard: View {
 
 #Preview {
     TodayCard()
+//        .padding()
 }
