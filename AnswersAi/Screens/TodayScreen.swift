@@ -7,13 +7,10 @@
 
 import SwiftUI
 
-struct CardView: Identifiable {
-    let id = UUID()
-//    let view: any View
-}
-
 struct TodayScreen: View {
-    @State private var cardStackNEW: [CardView] = []
+    
+    @Namespace private var animation
+    @State private var cardArray: [CardView] = []
     
     var body: some View {
         NavigationStack {
@@ -22,15 +19,19 @@ struct TodayScreen: View {
             }
             .navigationTitle("Today")
         }
-        .onAppear { for _ in 0 ..< 5 { cardStackNEW.append(CardView()) } }
+        .onAppear { for card in 0 ..< 5 {
+            cardArray.append(CardView(number: card)) }
+        }
     }
     
     private var cardStack: some View {
-        ForEach(cardStackNEW) { card in
+        ForEach(cardArray) { card in
             NavigationLink {
-                Text("This is a card")
+                Text("This is a card \(card.number + 1)")
             } label: {
                 TodayCard()
+                    .matchedTransitionSource(id: card.id, in: animation)
+                    .navigationTransition(.zoom(sourceID: card.id, in: animation))
             }
         }
     }
@@ -38,4 +39,9 @@ struct TodayScreen: View {
 
 #Preview {
     TodayScreen()
+}
+
+struct CardView: Identifiable {
+    let id = UUID()
+    let number: Int
 }
