@@ -56,6 +56,8 @@ struct TodayCard: View {
             Text("Training plans for your next marathon")
                 .font(.callout)
         }
+        .multilineTextAlignment(.leading)
+        .tint(.primary)
         .padding()
     }
     
@@ -77,6 +79,7 @@ struct TodayCard: View {
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }
+            .tint(.primary)
             .padding(.horizontal, 7)
             
             Spacer()
