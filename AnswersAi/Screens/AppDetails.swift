@@ -7,6 +7,7 @@
 
 import SwiftUI
 #warning("Make all the details Card properties")
+#warning("TabBar")
 struct AppDetails: View {
     let card: Card
     
