@@ -10,8 +10,11 @@ import SwiftUI
 struct TodayCard: View {
     var body: some View {
         VStack {
-            imageBanner
+//            imageBanner
             appDetails
+        }
+        .background {
+            Color(.systemGray6)
         }
     }
     
@@ -31,18 +34,25 @@ struct TodayCard: View {
                 .frame(width: 50, height: 50)
             
             VStack(alignment: .leading) {
-                Text("Utilities")
-                Text("Figma")
-                Text("Figma Inc.")
+                Text("Runna")
+                    .font(.headline)
+                
+                Text("RunBuddy")
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
             }
+            .padding(.horizontal, 7)
+            
             
             Spacer()
             
-            Button("Get") {
+            Button {
                 
+            } label: {
+                Text("Get")
+                    .padding(.horizontal, 10)
             }
             .font(.headline)
-            .textCase(.uppercase)
             .buttonStyle(.bordered)
             .buttonBorderShape(.capsule)
         }
