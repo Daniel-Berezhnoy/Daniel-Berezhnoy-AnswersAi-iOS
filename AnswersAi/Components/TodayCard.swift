@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TodayCard: View {
+    private let bannerHeight: CGFloat = 375
+    
     var body: some View {
         VStack {
             imageBanner
@@ -23,52 +25,21 @@ struct TodayCard: View {
         .frame(height: 400)
     }
     
-//    private var imageBanner: some View {
-//        VStack {
-//            Image(.peopleRunning)
-//                .resizable()
-//                .scaledToFit()
-//                .overlay(alignment: .bottom) { BottomBlur() }
-//            
-//            Spacer()
-//            
-//        }
-//        .frame(height: 290)
-//    }
-    
-//    private var imageBanner: some View {
-//        VStack {
-//            ZStack {
-////                Color.clear
-//                
-//                Image(.peopleRunning)
-//                    .resizable()
-//                    .scaledToFill()
-//                    .frame(height: 200)
-//                    .clipped()
-//                
-//                    .overlay(alignment: .bottom) { BottomBlur() }
-//            }
-//            .frame(height: 300)
-//            
-////            Spacer()
-//        }
-//    }
-    
     private var imageBanner: some View {
-        VStack {
-            ZStack(alignment: .bottom) {
-                Image(.peopleRunning)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(height: 500)
-                    .clipped()
-                    .overlay(alignment: .bottom) { BottomBlur(height: 220) }
-                
-                adDescription
-            }
-            .frame(width: 100, height: 500)
+        ZStack(alignment: .bottom) {
+            image
+            BottomBlur(height: 220)
+            adDescription
         }
+        .frame(width: 100, height: bannerHeight)
+    }
+    
+    private var image: some View {
+        Image(.peopleRunning)
+            .resizable()
+            .scaledToFill()
+            .frame(height: bannerHeight)
+            .clipped()
     }
     
     private var adDescription: some View {
@@ -86,12 +57,8 @@ struct TodayCard: View {
             Text("Training plans for your next marathon")
                 .font(.callout)
         }
-//                .frame(width: 330)
+//        .frame(width: 330)
         .padding()
-        
-//                .background {
-//                    Color.red
-//                }
     }
     
     private var appDetails: some View {

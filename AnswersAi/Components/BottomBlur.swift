@@ -24,11 +24,10 @@ struct BottomBlur: View {
                                     .black.opacity(0.707),
                                     .black.opacity(0.924),
                                     .black],
-                           
                            startPoint: .top,
                            endPoint: .bottom)
             
-            .frame(height: height / 1.75 /*1.25*/)
+            .frame(height: height / 1.75)
             
             Rectangle()
         }
