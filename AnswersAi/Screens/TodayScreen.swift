@@ -20,12 +20,12 @@ struct TodayScreen: View {
             .navigationTitle("Today")
         }
         .onAppear { for card in 0 ..< 5 {
-            cardArray.append(CardView(number: card)) }
+            cards.append(Card(number: card)) }
         }
     }
     
     private var cardStack: some View {
-        ForEach(cardArray) { card in
+        ForEach(cards) { card in
             NavigationLink {
                 Text("This is a card \(card.number + 1)")
                     .navigationTransition(.zoom(sourceID: card.id, in: animation))
