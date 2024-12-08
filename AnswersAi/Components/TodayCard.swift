@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TodayCard: View {
-    private let bannerHeight: CGFloat = 350
+    private let bannerHeight: CGFloat = 400
     
     var body: some View {
         VStack {

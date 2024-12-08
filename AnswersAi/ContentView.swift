@@ -9,13 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "swift")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            
-            Text("Let's GO!")
-                .padding()
+        ScrollView {
+//            ForEach(0 ..< 5) { card in
+                TodayCard()
+//            }
         }
     }
 }
