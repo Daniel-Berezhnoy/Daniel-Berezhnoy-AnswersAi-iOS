@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TodayCard: View {
-    private let bannerHeight: CGFloat = 375
+    private let bannerHeight: CGFloat = 350
     
     var body: some View {
         VStack {
@@ -21,8 +21,7 @@ struct TodayCard: View {
         
         .padding(.horizontal, 20)
         .padding(.vertical, 6)
-        
-        .frame(height: 400)
+        .frame(height: bannerHeight + 95)
     }
     
     private var imageBanner: some View {
@@ -31,7 +30,7 @@ struct TodayCard: View {
             BottomBlur(height: 220)
             adDescription
         }
-        .frame(width: 100, height: bannerHeight)
+        .frame(width: 200, height: bannerHeight)
     }
     
     private var image: some View {
@@ -90,7 +89,9 @@ struct TodayCard: View {
             .buttonStyle(.bordered)
             .buttonBorderShape(.capsule)
         }
-        .padding()
+        .padding(.horizontal)
+        .padding(.bottom)
+        .padding(.top, 8)
     }
 }
 

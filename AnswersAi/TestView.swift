@@ -19,26 +19,26 @@ struct Scroll: View {
     }
 }
 
-struct ListView: View {
-    var body: some View {
-        List {
-            ForEach(0 ..< 10) { card in
-                TodayCardNEW()
-                    .padding()
-            }
-        }
-        .listStyle(.plain)
-        
-        .listRowSeparator(.hidden, edges: .all)
-        
-        .listSectionSeparator(.hidden, edges: .all)
-    }
-}
+//struct ListView: View {
+//    var body: some View {
+//        List {
+//            ForEach(0 ..< 10) { card in
+//                TodayCardNEW()
+//                    .padding()
+//            }
+//        }
+//        .listStyle(.plain)
+//        
+//        .listRowSeparator(.hidden, edges: .all)
+//        
+//        .listSectionSeparator(.hidden, edges: .all)
+//    }
+//}
 
 #Preview("ScrollView") {
     Scroll()
 }
 
-#Preview("List") {
-    ListView()
-}
+//#Preview("List") {
+//    ListView()
+//}
