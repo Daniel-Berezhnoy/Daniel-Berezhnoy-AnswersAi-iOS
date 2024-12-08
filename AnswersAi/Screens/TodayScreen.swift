@@ -28,10 +28,10 @@ struct TodayScreen: View {
         ForEach(cardArray) { card in
             NavigationLink {
                 Text("This is a card \(card.number + 1)")
+                    .navigationTransition(.zoom(sourceID: card.id, in: animation))
             } label: {
                 TodayCard()
                     .matchedTransitionSource(id: card.id, in: animation)
-                    .navigationTransition(.zoom(sourceID: card.id, in: animation))
             }
         }
     }
