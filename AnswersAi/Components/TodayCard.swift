@@ -9,9 +9,18 @@ import SwiftUI
 
 struct TodayCard: View {
     var body: some View {
-        VStack {
-            imageBanner
-            appDetails
+        ScrollView {
+            VStack {
+                imageBanner
+                Spacer()
+                appDetails
+            }
+//            .frame(width: UIScreen.main.bounds.width)
+//            .padding(.bottom)
+            .background(Color(.systemGray5))
+            
+            .clipShape(.rect(cornerRadius: 15))
+            .padding()
         }
     }
     
@@ -19,10 +28,15 @@ struct TodayCard: View {
         Image(.peopleRunning)
             .resizable()
             .scaledToFill()
+//            .frame(height: 300)
+            
             .overlay(alignment: .bottom) { BottomBlur() }
+//            .padding(.horizontal)
+            
         
-            .frame(width: UIScreen.main.bounds.width, height: 300)
-            .clipShape(.rect(cornerRadii: .init(topLeading: 20, topTrailing: 20)))
+//            .frame(width: UIScreen.main.bounds.width, height: 300)
+//            .clipShape(.rect(cornerRadii: .init(topLeading: 20, topTrailing: 20)))
+//            .padding()
     }
     
     private var appDetails: some View {
@@ -41,7 +55,6 @@ struct TodayCard: View {
                     .foregroundStyle(.secondary)
             }
             .padding(.horizontal, 7)
-            
             
             Spacer()
             
