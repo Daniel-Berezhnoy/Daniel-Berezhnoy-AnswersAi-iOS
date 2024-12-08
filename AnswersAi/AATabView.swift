@@ -21,29 +21,34 @@ struct AATabView: View {
                         .environment(\.symbolVariants, .none)
                 }
             
-            Text("Games")
-                .tag("Games")
-                .tabItem {
-                    Label("Games", systemImage: "gamecontroller")
-                        .environment(\.symbolVariants, selectedTab == "Games" ? .fill : .none)
-                }
-            
-            Text("Apps")
-                .tag("Apps")
-                .tabItem { Label("Apps", systemImage: "square.stack.3d.up") }
-            
-            Text("Arcade")
-                .tag("Arcade")
-                .tabItem { Label("Arcade", systemImage: "arcade.stick.and.arrow.left.and.arrow.right.outward") }
-                
-            
-            Text("Search")
-                .tag("Search")
-                .tabItem { Label("Search", systemImage: "magnifyingglass") }
+            PlaceholderScreen(named: "Games", sfSymbol: "gamecontroller")
+            PlaceholderScreen(named: "Apps", sfSymbol: "square.stack.3d.up")
+            PlaceholderScreen(named: "Arcade", sfSymbol: "arcade.stick")
+            PlaceholderScreen(named: "Search", sfSymbol: "magnifyingglass")
         }
     }
 }
 
 #Preview {
     AATabView()
+}
+
+struct PlaceholderScreen: View {
+    
+    private let screenName: String
+    private let sfSymbol: String
+    
+    var body: some View {
+        Text(screenName)
+            .tag(screenName)
+            .tabItem {
+                Label(screenName, systemImage: sfSymbol)
+                    .environment(\.symbolVariants, screenName == "Games" ? .none : .fill)
+            }
+    }
+    
+    init(named: String, sfSymbol: String) {
+        self.screenName = named
+        self.sfSymbol = sfSymbol
+    }
 }
