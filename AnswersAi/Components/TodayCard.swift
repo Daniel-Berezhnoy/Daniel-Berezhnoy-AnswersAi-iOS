@@ -10,11 +10,8 @@ import SwiftUI
 struct TodayCard: View {
     var body: some View {
         VStack {
-//            imageBanner
+            imageBanner
             appDetails
-        }
-        .background {
-            Color(.systemGray6)
         }
     }
     
@@ -22,8 +19,10 @@ struct TodayCard: View {
         Image(.peopleRunning)
             .resizable()
             .scaledToFill()
-            .frame(maxHeight: 300)
             .overlay(alignment: .bottom) { BottomBlur() }
+        
+            .frame(width: UIScreen.main.bounds.width, height: 300)
+            .clipShape(.rect(cornerRadii: .init(topLeading: 20, topTrailing: 20)))
     }
     
     private var appDetails: some View {
@@ -47,7 +46,7 @@ struct TodayCard: View {
             Spacer()
             
             Button {
-                
+                // Get the App
             } label: {
                 Text("Get")
                     .padding(.horizontal, 10)
