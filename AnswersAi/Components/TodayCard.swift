@@ -57,20 +57,36 @@ struct TodayCard: View {
     
     private var imageBanner: some View {
         VStack {
-            ZStack {
-                Color.clear // Placeholder to define the container size
-                
+            ZStack(alignment: .bottom) {
                 Image(.peopleRunning)
                     .resizable()
                     .scaledToFill()
-                // This can be larger than the container size.
                     .frame(height: 500)
                     .clipped()
-                    .overlay(alignment: .bottom) { BottomBlur() }
+                    .overlay(alignment: .bottom) { BottomBlur(height: 220) }
+                
+                VStack(alignment: .leading) {
+                    Text("Apps We Love")
+                        .font(.headline)
+                        .foregroundStyle(.secondary)
+                        .textCase(.uppercase)
+                    
+                    Text("Hit the Ground Running \nWith Runna")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .lineLimit(2)
+                    
+                    Text("Training plans for your next marathon")
+                        .font(.callout)
+                }
+//                .frame(width: 330)
+                .padding()
+                
+//                .background {
+//                    Color.red
+//                }
             }
-            .frame(width: 50, height: 500) // Fixed frame, parent sees only this size
-            
-            // Other content here
+            .frame(width: 100, height: 500)
         }
     }
     
