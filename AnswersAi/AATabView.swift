@@ -40,30 +40,41 @@ struct PlaceholderScreen: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                Image(systemName: sfSymbol)
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundStyle(.blue.gradient)
-                
-                    .frame(width: 125, height: 125)
-                    .padding(.top, 175)
-                    .padding(.bottom)
-                
-                Text(screenName + " Feature ")
-                
-                +
-                
-                Text("is coming soon...")
-                    .fontWeight(.regular)
+                VStack {
+                    image
+                    textLabel
+                }
             }
             .font(.headline)
             .navigationTitle(screenName)
         }
         .tag(screenName)
-        .tabItem {
-            Label(screenName, systemImage: sfSymbol)
-                .environment(\.symbolVariants, screenName == "Games" ? .none : .fill)
-        }
+        .tabItem { tabLabel }
+    }
+    
+    private var image: some View {
+        Image(systemName: sfSymbol)
+            .resizable()
+            .scaledToFit()
+            .foregroundStyle(.blue.gradient)
+        
+            .frame(width: 125, height: 125)
+            .padding(.top, 175)
+            .padding(.bottom)
+    }
+    
+    private var textLabel: some View {
+        Text(screenName + " Feature ")
+        
+        +
+        
+        Text("is coming soon...")
+            .fontWeight(.regular)
+    }
+    
+    private var tabLabel: some View {
+        Label(screenName, systemImage: sfSymbol)
+            .environment(\.symbolVariants, screenName == "Games" ? .none : .fill)
     }
     
     init(named: String, sfSymbol: String) {
