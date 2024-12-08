@@ -10,7 +10,7 @@ import SwiftUI
 struct TodayScreen: View {
     
     @Namespace private var animation
-    @State private var cardArray: [CardView] = []
+    @State private var cards: [Card] = []
     
     var body: some View {
         NavigationStack {
@@ -41,7 +41,7 @@ struct TodayScreen: View {
     TodayScreen()
 }
 
-struct CardView: Identifiable {
+struct Card: Identifiable {
     let id = UUID()
     let number: Int
 }
