@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ScrollView {
-//            ForEach(0 ..< 5) { card in
+            ForEach(0 ..< 5) { card in
                 TodayCard()
-//            }
+            }
         }
     }
 }

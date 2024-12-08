@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TodayCard: View {
-    private let bannerHeight: CGFloat = 400
+    private let bannerHeight: CGFloat
     
     var body: some View {
         VStack {
@@ -56,17 +56,19 @@ struct TodayCard: View {
             Text("Training plans for your next marathon")
                 .font(.callout)
         }
-//        .frame(width: 330)
         .padding()
     }
     
     private var appDetails: some View {
         HStack {
+            
+            // App Logo
             Image(.appIcon)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 50, height: 50)
             
+            // App Name
             VStack(alignment: .leading) {
                 Text("Runna")
                     .font(.headline)
@@ -79,8 +81,9 @@ struct TodayCard: View {
             
             Spacer()
             
+            // Get Button
             Button {
-                // Get the App
+                print("Get the App!")
             } label: {
                 Text("Get")
                     .padding(.horizontal, 10)
@@ -92,6 +95,10 @@ struct TodayCard: View {
         .padding(.horizontal)
         .padding(.bottom)
         .padding(.top, 8)
+    }
+    
+    init(imageHeight: CGFloat = 400) {
+        self.bannerHeight = imageHeight
     }
 }
 
