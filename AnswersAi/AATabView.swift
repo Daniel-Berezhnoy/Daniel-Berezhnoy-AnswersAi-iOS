@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct AATabView: View {
-    
-    @State private var selectedTab = "Today"
-    
+//    @State private var selectedTab = "Today"
+    @State private var selectedTab = "Apps"
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -39,12 +38,32 @@ struct PlaceholderScreen: View {
     private let sfSymbol: String
     
     var body: some View {
-        Text(screenName)
-            .tag(screenName)
-            .tabItem {
-                Label(screenName, systemImage: sfSymbol)
-                    .environment(\.symbolVariants, screenName == "Games" ? .none : .fill)
+        NavigationStack {
+            ScrollView {
+                Image(systemName: sfSymbol)
+                    .resizable()
+                    .scaledToFit()
+                    .foregroundStyle(.blue.gradient)
+                
+                    .frame(width: 125, height: 125)
+                    .padding(.top, 175)
+                    .padding(.bottom)
+                
+                Text(screenName + " Feature ")
+                
+                +
+                
+                Text("is coming soon...")
+                    .fontWeight(.regular)
             }
+            .font(.headline)
+            .navigationTitle(screenName)
+        }
+        .tag(screenName)
+        .tabItem {
+            Label(screenName, systemImage: sfSymbol)
+                .environment(\.symbolVariants, screenName == "Games" ? .none : .fill)
+        }
     }
     
     init(named: String, sfSymbol: String) {
