@@ -11,7 +11,7 @@ struct TodayCard: View {
     var body: some View {
         VStack {
             imageBanner
-//            appDetails
+            appDetails
         }
     }
     
@@ -20,22 +20,33 @@ struct TodayCard: View {
             .resizable()
             .scaledToFill()
             .frame(maxHeight: 300)
-        
-            .overlay(alignment: .bottom) {
-                ZStack(alignment: .bottom) {
-                    BottomBlur()
-                    
-                    VStack {
-                        Text("Hello")
-                        Text("It's Me")
-                    }
-                    .padding()
-                }
-            }
+            .overlay(alignment: .bottom) { BottomBlur() }
     }
     
     private var appDetails: some View {
-        Text("App Details")
+        HStack {
+            Image(.appIcon)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 50, height: 50)
+            
+            VStack(alignment: .leading) {
+                Text("Utilities")
+                Text("Figma")
+                Text("Figma Inc.")
+            }
+            
+            Spacer()
+            
+            Button("Get") {
+                
+            }
+            .font(.headline)
+            .textCase(.uppercase)
+            .buttonStyle(.bordered)
+            .buttonBorderShape(.capsule)
+        }
+        .padding()
     }
 }
 
