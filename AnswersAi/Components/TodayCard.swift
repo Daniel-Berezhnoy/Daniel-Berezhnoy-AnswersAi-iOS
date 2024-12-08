@@ -69,5 +69,4 @@ struct TodayCard: View {
 
 #Preview {
     TodayCard()
-//        .padding()
 }
