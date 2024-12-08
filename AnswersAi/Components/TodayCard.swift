@@ -65,29 +65,33 @@ struct TodayCard: View {
                     .clipped()
                     .overlay(alignment: .bottom) { BottomBlur(height: 220) }
                 
-                VStack(alignment: .leading) {
-                    Text("Apps We Love")
-                        .font(.headline)
-                        .foregroundStyle(.secondary)
-                        .textCase(.uppercase)
-                    
-                    Text("Hit the Ground Running \nWith Runna")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .lineLimit(2)
-                    
-                    Text("Training plans for your next marathon")
-                        .font(.callout)
-                }
-//                .frame(width: 330)
-                .padding()
-                
-//                .background {
-//                    Color.red
-//                }
+                adDescription
             }
             .frame(width: 100, height: 500)
         }
+    }
+    
+    private var adDescription: some View {
+        VStack(alignment: .leading) {
+            Text("Apps We Love")
+                .font(.headline)
+                .foregroundStyle(.secondary)
+                .textCase(.uppercase)
+            
+            Text("Hit the Ground Running \nWith Runna")
+                .font(.title)
+                .fontWeight(.bold)
+                .lineLimit(2)
+            
+            Text("Training plans for your next marathon")
+                .font(.callout)
+        }
+//                .frame(width: 330)
+        .padding()
+        
+//                .background {
+//                    Color.red
+//                }
     }
     
     private var appDetails: some View {
