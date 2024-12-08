@@ -33,6 +33,7 @@ struct AATabView: View {
 }
 
 struct PlaceholderScreen: View {
+    @State private var rotation: Double = 0
     
     private let screenName: String
     private let sfSymbol: String
@@ -57,6 +58,9 @@ struct PlaceholderScreen: View {
             .resizable()
             .scaledToFit()
             .foregroundStyle(.blue.gradient)
+        
+            .rotation3DEffect(.degrees(rotation), axis: (x: 1, y: 0, z: 0))
+            .onTapGesture { withAnimation(.bouncy) { rotation += 360 } }
         
             .frame(width: 125, height: 125)
             .padding(.top, 175)
