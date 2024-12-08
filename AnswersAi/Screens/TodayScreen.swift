@@ -15,19 +15,19 @@ struct TodayScreen: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                cardStack
+                cardList
             }
             .navigationTitle("Today")
         }
-        .onAppear { for card in 0 ..< 5 {
-            cards.append(Card(number: card)) }
+        .onAppear { for _ in 0 ..< 5 {
+            cards.append(Card()) }
         }
     }
     
-    private var cardStack: some View {
+    private var cardList: some View {
         ForEach(cards) { card in
             NavigationLink {
-                Text("This is a card \(card.number + 1)")
+                AppDetails(card: card)
                     .navigationTransition(.zoom(sourceID: card.id, in: animation))
             } label: {
                 TodayCard()
@@ -43,5 +43,5 @@ struct TodayScreen: View {
 
 struct Card: Identifiable {
     let id = UUID()
-    let number: Int
+//    let number: Int
 }
