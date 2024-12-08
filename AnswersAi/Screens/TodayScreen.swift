@@ -7,7 +7,14 @@
 
 import SwiftUI
 
+struct CardView: Identifiable {
+    let id = UUID()
+//    let view: any View
+}
+
 struct TodayScreen: View {
+    @State private var cardStackNEW: [CardView] = []
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -15,12 +22,13 @@ struct TodayScreen: View {
             }
             .navigationTitle("Today")
         }
+        .onAppear { for _ in 0 ..< 5 { cardStackNEW.append(CardView()) } }
     }
     
     private var cardStack: some View {
-        ForEach(0 ..< 5) { card in
+        ForEach(cardStackNEW) { card in
             NavigationLink {
-                Text("This is card #\(card + 1)")
+                Text("This is a card")
             } label: {
                 TodayCard()
             }
