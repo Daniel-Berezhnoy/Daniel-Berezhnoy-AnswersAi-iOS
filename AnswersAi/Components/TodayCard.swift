@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TodayCard: View {
     var body: some View {
-        ZStack(alignment: .bottom) {
+        VStack {
             imageBanner
             Spacer()
             appDetails
@@ -19,19 +19,59 @@ struct TodayCard: View {
         
         .padding(.horizontal, 20)
         .padding(.vertical, 6)
+        
+        .frame(height: 400)
     }
+    
+//    private var imageBanner: some View {
+//        VStack {
+//            Image(.peopleRunning)
+//                .resizable()
+//                .scaledToFit()
+//                .overlay(alignment: .bottom) { BottomBlur() }
+//            
+//            Spacer()
+//            
+//        }
+//        .frame(height: 290)
+//    }
+    
+//    private var imageBanner: some View {
+//        VStack {
+//            ZStack {
+////                Color.clear
+//                
+//                Image(.peopleRunning)
+//                    .resizable()
+//                    .scaledToFill()
+//                    .frame(height: 200)
+//                    .clipped()
+//                
+//                    .overlay(alignment: .bottom) { BottomBlur() }
+//            }
+//            .frame(height: 300)
+//            
+////            Spacer()
+//        }
+//    }
     
     private var imageBanner: some View {
         VStack {
-            Image(.peopleRunning)
-                .resizable()
-                .scaledToFit()
-                .overlay(alignment: .bottom) { BottomBlur() }
+            ZStack {
+                Color.clear // Placeholder to define the container size
+                
+                Image(.peopleRunning)
+                    .resizable()
+                    .scaledToFill()
+                // This can be larger than the container size.
+                    .frame(height: 500)
+                    .clipped()
+                    .overlay(alignment: .bottom) { BottomBlur() }
+            }
+            .frame(width: 50, height: 500) // Fixed frame, parent sees only this size
             
-            Spacer()
-            
+            // Other content here
         }
-        .frame(height: 290)
     }
     
     private var appDetails: some View {
