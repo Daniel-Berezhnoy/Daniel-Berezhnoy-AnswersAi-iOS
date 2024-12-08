@@ -14,7 +14,7 @@ struct TodayCard: View {
         VStack {
             imageBanner
             Spacer()
-            appDetails
+            appBanner
         }
         .background(Color(.systemGray6))
         .clipShape(.rect(cornerRadius: 15))
@@ -61,7 +61,7 @@ struct TodayCard: View {
         .padding()
     }
     
-    private var appDetails: some View {
+    private var appBanner: some View {
         HStack {
             
             // App Logo
