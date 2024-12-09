@@ -13,17 +13,16 @@ struct TodayCard: View {
     private let bannerHeight: CGFloat
     
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             banner
-            Spacer()
             appDetails
         }
         .background(Color(.systemGray6))
         .clipShape(.rect(cornerRadius: 15))
-        
-        .padding(.horizontal, 20)
-        .padding(.vertical, 6)
         .frame(height: bannerHeight + 95)
+        
+        .padding(.horizontal, 25)
+        .padding(.vertical, 6)
     }
     
     private var banner: some View {
@@ -58,11 +57,10 @@ struct TodayCard: View {
             Text(card.banner.subtitle)
                 .font(.callout)
         }
+        .frame(width: UIScreen.main.bounds.width)
         .multilineTextAlignment(.leading)
         .tint(.primary)
-        
         .padding()
-        .frame(width: UIScreen.main.bounds.width)
     }
     
     private var appDetails: some View {

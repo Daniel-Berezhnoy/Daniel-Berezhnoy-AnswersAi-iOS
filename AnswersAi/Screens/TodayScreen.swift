@@ -25,7 +25,7 @@ struct TodayScreen: View {
             .navigationTitle(hideNavigationBar ? "" : "Today")
             .safeAreaInset(edge: .top) { translucentBar }
         }
-        .onAppear { for _ in 0 ..< 5 { cards.append(Card()) } }
+        .onAppear { for _ in 0 ..< 7 { cards.append(Card()) } }
     }
     
     private var cardList: some View {
