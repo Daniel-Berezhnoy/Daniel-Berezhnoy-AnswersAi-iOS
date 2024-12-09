@@ -62,41 +62,7 @@ struct AppDetails: View {
     }
     
     private var appDetails: some View {
-        HStack {
-            
-            // App Icon
-            card.appDetails.icon
-                .resizable()
-                .scaledToFit()
-                .frame(width: 50, height: 50)
-            
-            // App Name
-            VStack(alignment: .leading) {
-                Text(card.appDetails.name)
-                    .font(.headline)
-                
-                Text(card.appDetails.subtitle)
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-            }
-            .tint(.primary)
-            .padding(.horizontal, 7)
-            
-            Spacer()
-            
-            // Get Button
-            Button {
-                print("Get the App!")
-            } label: {
-                Text("Get")
-                    .padding(.horizontal, 10)
-            }
-            .font(.headline)
-            .buttonStyle(.bordered)
-            .buttonBorderShape(.capsule)
-        }
-        .padding()
-        .background(Color(.systemGray6))
+        AppInfoBanner(with: card.appDetails)
     }
     
     private var appDescription: some View {

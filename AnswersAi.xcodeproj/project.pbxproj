@@ -19,6 +19,7 @@
 		B965715C2D0675D000959A86 /* CardBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965715B2D0675D000959A86 /* CardBanner.swift */; };
 		B965715E2D0675E700959A86 /* CardAppDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965715D2D0675E700959A86 /* CardAppDetails.swift */; };
 		B96571602D06BEFC00959A86 /* DismissibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965715F2D06BEFC00959A86 /* DismissibleView.swift */; };
+		B999EB4E2D06DFA200F8CB0B /* AppInfoBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B999EB4D2D06DFA200F8CB0B /* AppInfoBanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		B965715B2D0675D000959A86 /* CardBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBanner.swift; sourceTree = "<group>"; };
 		B965715D2D0675E700959A86 /* CardAppDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAppDetails.swift; sourceTree = "<group>"; };
 		B965715F2D06BEFC00959A86 /* DismissibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissibleView.swift; sourceTree = "<group>"; };
+		B999EB4D2D06DFA200F8CB0B /* AppInfoBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoBanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			children = (
 				B96571492D050A6500959A86 /* TodayCard.swift */,
 				B965714B2D05166200959A86 /* BottomBlur.swift */,
+				B999EB4D2D06DFA200F8CB0B /* AppInfoBanner.swift */,
 				B965715F2D06BEFC00959A86 /* DismissibleView.swift */,
 			);
 			path = Views;
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B96571522D0562D900959A86 /* AATabView.swift in Sources */,
+				B999EB4E2D06DFA200F8CB0B /* AppInfoBanner.swift in Sources */,
 				B96571552D0579A600959A86 /* PlaceholderScreen.swift in Sources */,
 				B93B38C82D03C5C7006EAD0B /* AnswersAiApp.swift in Sources */,
 				B96571602D06BEFC00959A86 /* DismissibleView.swift in Sources */,
