@@ -67,17 +67,17 @@ struct TodayCard: View {
         HStack {
             
             // App Logo
-            card.appDetails.appIcon
+            card.appDetails.icon
                 .resizable()
                 .scaledToFit()
                 .frame(width: 50, height: 50)
             
             // App Name
             VStack(alignment: .leading) {
-                Text(card.appDetails.appName)
+                Text(card.appDetails.name)
                     .font(.headline)
                 
-                Text(card.appDetails.appSubtitle)
+                Text(card.appDetails.subtitle)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }

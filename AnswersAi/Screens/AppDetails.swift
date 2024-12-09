@@ -13,19 +13,19 @@ struct AppDetails: View {
     #warning("ScrollView?")
     var body: some View {
         VStack(spacing: 0) {
-            imageBanner
-            appBanner
+            banner
+            appDetails
             appDescription
             Spacer()
         }
         .ignoresSafeArea()
     }
     
-    private var imageBanner: some View {
+    private var banner: some View {
         ZStack(alignment: .bottom) {
             image
             BottomBlur(height: 250)
-            adDescription
+            bannerDescription
         }
 //        .frame(width: 200, height: 400)
     }
@@ -39,7 +39,7 @@ struct AppDetails: View {
     }
     
     #warning("Make this wider")
-    private var adDescription: some View {
+    private var bannerDescription: some View {
         VStack(alignment: .leading) {
             Text(card.banner.header)
                 .font(.headline)
@@ -59,21 +59,21 @@ struct AppDetails: View {
         .padding()
     }
     
-    private var appBanner: some View {
+    private var appDetails: some View {
         HStack {
             
             // App Logo
-            card.appDetails.appIcon
+            card.appDetails.icon
                 .resizable()
                 .scaledToFit()
                 .frame(width: 50, height: 50)
             
             // App Name
             VStack(alignment: .leading) {
-                Text(card.appDetails.appName)
+                Text(card.appDetails.name)
                     .font(.headline)
                 
-                Text(card.appDetails.appSubtitle)
+                Text(card.appDetails.subtitle)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }
@@ -98,7 +98,7 @@ struct AppDetails: View {
     }
     
     private var appDescription: some View {
-        Text(card.appDetails.appDescription)
+        Text(card.appDetails.description)
             .padding()
     }
     
