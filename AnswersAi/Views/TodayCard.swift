@@ -60,8 +60,8 @@ struct TodayCard: View {
         }
         .multilineTextAlignment(.leading)
         .tint(.primary)
-        .padding()
         
+        .padding()
         .frame(width: UIScreen.main.bounds.width)
     }
     

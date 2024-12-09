@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+#warning("Change Close Button")
+#warning("Remove Nav Bar")
+#warning("Hide Status Bar")
 struct AppDetails: View {
     private let card: Card
     
@@ -27,7 +30,7 @@ struct AppDetails: View {
             BottomBlur(height: 250)
             bannerDescription
         }
-        .frame(width: UIScreen.main.bounds.width)
+        .frame(width: screenWidth)
     }
     
     private var bannerImage: some View {
@@ -59,7 +62,7 @@ struct AppDetails: View {
             
             Spacer()
         }
-        .frame(width: UIScreen.main.bounds.width)
+        .frame(width: screenWidth)
     }
     
     private var appDetails: some View {
@@ -103,6 +106,10 @@ struct AppDetails: View {
     private var appDescription: some View {
         Text(card.appDetails.description)
             .padding()
+    }
+    
+    private var screenWidth: CGFloat {
+        UIScreen.main.bounds.width
     }
     
     init(for card: Card) {
