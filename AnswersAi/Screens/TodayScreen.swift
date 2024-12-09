@@ -15,7 +15,9 @@ struct TodayScreen: View {
     @Namespace private var animation
     
     @State private var cards: [Card] = []
+    
     @State private var hideNavigationBar = false
+    @State private var showNavigationInset = false
     
     var body: some View {
         NavigationStack {
@@ -46,9 +48,12 @@ struct TodayScreen: View {
     private var geometryReader: some View {
         GeometryReader { proxy in
             Color.clear
+            
+            // MARK: Breakaway Point - 113
                 .onChange(of: proxy.frame(in: .global).minY) { _, newValue in
                     withAnimation {
-                        hideNavigationBar = newValue < -30
+                        hideNavigationBar = newValue < 113
+//                        showNavigationInset = newValue < 90
                     }
                 }
         }
@@ -56,10 +61,16 @@ struct TodayScreen: View {
     
     private var translucentBar: some View {
         ZStack {
-            if hideNavigationBar {
+//            if hideNavigationBar {
+            if showNavigationInset {
                 Text("")
                     .frame(maxWidth: .infinity, maxHeight: 0)
                     .background(Material.bar)
+//                    .background {
+//                        Color.red
+//                    }
+                
+                    
             }
         }
     }
