@@ -50,10 +50,11 @@ struct TodayScreen: View {
             Color.clear
             
             // MARK: Breakaway Point - 113
-                .onChange(of: proxy.frame(in: .global).minY) { _, newValue in
+                .onChange(of: proxy.frame(in: .global).minY) { oldValue, newValue in
                     withAnimation {
-                        hideNavigationBar = newValue < 113
-//                        showNavigationInset = newValue < 90
+                        hideNavigationBar = newValue < 50
+                        print(newValue)
+                        showNavigationInset = oldValue < 100
                     }
                 }
         }
