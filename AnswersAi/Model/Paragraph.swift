@@ -24,11 +24,10 @@ extension Paragraph {
     
     static let runnaThirdParagraph = Paragraph(title: "Reach your pinnacle as a runner: ",
                                                body: "Running Training Plans, your quintessential guide to the world of running. With tailored training plans built by world-class coaches and powered by Al to help you achieve your goals. Embark on an unparalleled running journey with Runna. More than just a pocket-sized running coach, Runna is your comprehensive running companion.")
-    #warning("Change")
     // MARK: Budgetwise
-    static let budgetwiseFirstParagraph = Paragraph(title: "Whether you're an ",
-                                                    body: "ultramarathoner, a triathlete, or a total beginner, this virtual running coach can help you find your stride— and a supportive community.")
+    static let budgetwiseFirstParagraph = Paragraph(title: "Budgetwise ",
+                                                    body: "is an AI-powered personal finance app that simplifies money management using a unique combination of AI, community, and a smooth user experience. Take control of your finances and achieve financial success effortlessly. Budget. Save. Live!")
     
     static let budgetwiseSecondParagraph = Paragraph(title: "What we love: ",
-                                                     body: "The holistic approach of Runna's personalized fitness plans. Get realtime audio tips on pace and gait as you run as well as reminders to rest. When you're not on the move, the app may offer nutrition guidance or suggest cross-training workouts, like strength-building or Pilates.")
+                                                     body: "Budgetwise is unique, not just because of the simplicity of its user-interface, but also because it has a community of users that can help one another towards healthy financial habits and financial freedom. Unlike other apps, we don’t inundate you with ads or financial services or premium options. We truly put the user first. We can also sync with the budget on your Google-spreadsheets if you aren't quite ready to let go off of that style of budgeting.")
 }
