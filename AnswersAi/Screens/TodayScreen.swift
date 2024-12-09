@@ -16,11 +16,28 @@ struct TodayScreen: View {
     @Namespace private var animation
     @State private var cards: [Card] = []
     
+    
+//    @State private var hideNavigationBar = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
+                
+                
+//                GeometryReader { proxy in
+//                    Color.clear
+//                        .onChange(of: proxy.frame(in: .global).minY) { _, newValue in
+//                            withAnimation {
+//                                hideNavigationBar = (newValue < -30)
+//                            }
+//                        }
+//                }
+                
+                
                 cardList
             }
+//            .navigationTitle(hideNavigationBar ? "" : "Today")
+            
             .navigationTitle("Today")
         }
         .onAppear { for _ in 0 ..< 5 {

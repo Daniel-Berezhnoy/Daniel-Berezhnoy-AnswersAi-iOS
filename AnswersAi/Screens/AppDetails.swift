@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-#warning("Change Close Button")
-#warning("Remove Nav Bar")
-#warning("Hide Status Bar")
 struct AppDetails: View {
     private let card: Card
     
