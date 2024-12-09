@@ -17,7 +17,8 @@ struct CardBanner {
 extension CardBanner {
     static let runnaCover = CardBanner(
         header: "Apps We Love",
-        title: "Hit the Ground Running \nWith Runna",
+//        title: "Hit the Ground Running \nWith Runna",
+        title: "Hit the Ground Running With Runna",
         subtitle: "Training plans for your next marathon",
         coverImage: Image(.peopleRunning)
     )

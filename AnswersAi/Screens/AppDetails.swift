@@ -24,46 +24,49 @@ struct AppDetails: View {
     
     private var banner: some View {
         ZStack(alignment: .bottom) {
-            image
+            bannerImage
             BottomBlur(height: 250)
             bannerDescription
         }
-//        .frame(width: 200, height: 400)
     }
     
-    private var image: some View {
+    private var bannerImage: some View {
         card.banner.coverImage
             .resizable()
             .scaledToFill()
             .frame(height: 400)
-//            .clipped()
     }
     
-    #warning("Make this wider")
     private var bannerDescription: some View {
-        VStack(alignment: .leading) {
-            Text(card.banner.header)
-                .font(.headline)
-                .foregroundStyle(.secondary)
-                .textCase(.uppercase)
+        HStack {
+            VStack(alignment: .leading) {
+                Text(card.banner.header)
+                    .font(.headline)
+                    .foregroundStyle(.secondary)
+                    .textCase(.uppercase)
+                
+                Text(card.banner.title)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .lineLimit(2)
+                
+                Text(card.banner.subtitle)
+                    .font(.callout)
+            }
+            .multilineTextAlignment(.leading)
+            .tint(.primary)
+            .padding()
             
-            Text(card.banner.title)
-                .font(.title)
-                .fontWeight(.bold)
-                .lineLimit(2)
             
-            Text(card.banner.subtitle)
-                .font(.callout)
+            Spacer()
         }
-        .multilineTextAlignment(.leading)
-        .tint(.primary)
-        .padding()
+        .frame(width: UIScreen.main.bounds.width)
     }
     
     private var appDetails: some View {
         HStack {
             
-            // App Logo
+            // App Icon
             card.appDetails.icon
                 .resizable()
                 .scaledToFit()

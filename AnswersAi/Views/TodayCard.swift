@@ -14,9 +14,9 @@ struct TodayCard: View {
     
     var body: some View {
         VStack {
-            imageBanner
+            banner
             Spacer()
-            appBanner
+            appDetails
         }
         .background(Color(.systemGray6))
         .clipShape(.rect(cornerRadius: 15))
@@ -26,16 +26,16 @@ struct TodayCard: View {
         .frame(height: bannerHeight + 95)
     }
     
-    private var imageBanner: some View {
+    private var banner: some View {
         ZStack(alignment: .bottom) {
-            image
+            bannerImage
             BottomBlur(height: 220)
-            adDescription
+            bannerDescription
         }
         .frame(width: 200, height: bannerHeight)
     }
     
-    private var image: some View {
+    private var bannerImage: some View {
         card.banner.coverImage
             .resizable()
             .scaledToFill()
@@ -43,7 +43,7 @@ struct TodayCard: View {
             .clipped()
     }
     
-    private var adDescription: some View {
+    private var bannerDescription: some View {
         VStack(alignment: .leading) {
             Text(card.banner.header)
                 .font(.headline)
@@ -61,12 +61,14 @@ struct TodayCard: View {
         .multilineTextAlignment(.leading)
         .tint(.primary)
         .padding()
+        
+        .frame(width: UIScreen.main.bounds.width)
     }
     
-    private var appBanner: some View {
+    private var appDetails: some View {
         HStack {
             
-            // App Logo
+            // App Icon
             card.appDetails.icon
                 .resizable()
                 .scaledToFit()
