@@ -14,6 +14,8 @@ struct AppDetails: View {
     private let card: Card
     
     var body: some View {
+        
+        // TODO: Make top part a HEADER?
         ScrollView {
             VStack(spacing: 0) {
                 banner
@@ -21,9 +23,6 @@ struct AppDetails: View {
                 appDescription
             }
         }
-//        .ignoresSafeArea(edges: .top)
-//        .navigationBarBackButtonHidden()
-//        .statusBarHidden()
     }
     
     private var banner: some View {
@@ -148,13 +147,30 @@ struct DismissibleView<Content: View>: View {
             Button {
                 dismiss()
             } label: {
-                Image(systemName: "xmark")
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(Color(uiColor: .label))
-                    .background(Color(uiColor: .systemBackground))
-                    .clipShape(Circle())
+                Image(systemName: "xmark.circle.fill")
+                    .font(.title)
+//                    .fontWeight(.medium)
+//                    .foregroundStyle(.foreground)
+                
+                    .foregroundStyle(Material.bar)
+                
+//                    .tint(Material.bar)
+                
+                    .background (
+//                        Color.primary
+                        Material.ultraThin
+                    )
+                
+                    .padding(-2.3)
+                
+                    .clipShape(.circle)
+//                    .padding()
+                
+//                    .frame(width: 10, height: 10)
+                
+                    
             }
-            .padding([.top, .trailing], 30)
+            .padding([.top, .trailing], 23)
         }
     }
     
