@@ -45,24 +45,26 @@ struct AppInfoBanner: View {
     
     private var getButton: some View {
         Button {
-            withAnimation {
-                getAppPressed.toggle()
-            }
-            
+            withAnimation { getAppPressed.toggle() }
         } label: {
-            
-            if getAppPressed {
-                Image(systemName: "checkmark")
-            } else {
-                Text("Get")
-                    .padding(.horizontal, 10)
-            }
-            
-            
+            dynamicButtonLabel
         }
         .font(.headline)
         .buttonStyle(.bordered)
         .buttonBorderShape(.capsule)
+    }
+    
+    private var dynamicButtonLabel: some View {
+        ZStack {
+            if getAppPressed {
+                ProgressView()
+                    .padding(.vertical, 5)
+                
+            } else {
+                Text("Get")
+                    .padding(.horizontal, 10)
+            }
+        }
     }
     
     init(with details: CardAppDetails) {
