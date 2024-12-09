@@ -7,11 +7,55 @@
 
 import SwiftUI
 
+#error("Working Here")
 struct CardAppDetails {
     let name: String
     let subtitle: String
     let icon: Image
     let description: String
+//    let description: AttributedString
+//    
+//    init(name: String, subtitle: String, icon: Image, description: String) {
+//        // Split the input string into paragraphs
+//        let paragraphs = description.components(separatedBy: "\n")
+//        
+//        var finalAttributedString = AttributedString()
+//        
+//        for (index, paragraph) in paragraphs.enumerated() {
+//            // Find the earliest punctuation ('.' or ';') to determine sentence boundary
+//            let punctuationIndices = [paragraph.firstIndex(of: "."), paragraph.firstIndex(of: ":")].compactMap { $0 }
+//            
+//            if let earliestPunctuationIndex = punctuationIndices.min() {
+//                // Extract the first sentence including the punctuation mark
+//                let boldRange = paragraph.startIndex...earliestPunctuationIndex
+//                var boldPart = AttributedString(String(paragraph[boldRange]))
+//                boldPart.font = .system(.body).bold()
+//                finalAttributedString.append(boldPart)
+//                
+//                // Append the rest of the paragraph if there is any
+//                let restStartIndex = paragraph.index(after: earliestPunctuationIndex)
+//                if restStartIndex < paragraph.endIndex {
+//                    let remainingText = paragraph[restStartIndex...]
+//                    finalAttributedString.append(AttributedString(String(remainingText)))
+//                }
+//            } else {
+//                // No punctuation found—just bold the entire paragraph as a fallback
+//                var boldPart = AttributedString(paragraph)
+//                boldPart.font = .system(.body).bold()
+//                finalAttributedString.append(boldPart)
+//            }
+//            
+//            // Add a newline after each paragraph except the last one
+//            if index < paragraphs.count - 1 {
+//                finalAttributedString.append(AttributedString("\n"))
+//            }
+//        }
+//        
+//        self.name = name
+//        self.subtitle = subtitle
+//        self.icon = icon
+//        self.description = finalAttributedString
+//    }
 }
 
 extension CardAppDetails {
