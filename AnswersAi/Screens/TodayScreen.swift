@@ -44,15 +44,12 @@ struct TodayScreen: View {
         }
     }
     
-    #warning("Working Here")
     private var geometryReader: some View {
         GeometryReader { proxy in
             Color.clear
                 .onChange(of: proxy.frame(in: .global).minY) { oldValue, newValue in
-                    withAnimation {
-                        hideNavigationBar = newValue < 50
-                        showNavigationInset = oldValue < 49
-                    }
+                    hideNavigationBar = newValue < 50
+                    showNavigationInset = oldValue < 49
                 }
         }
     }
