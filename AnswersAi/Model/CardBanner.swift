@@ -22,11 +22,10 @@ extension CardBanner {
         coverImage: Image(.runnaCover)
     )
     
-    #warning("Change")
     static let budgetwiseCover = CardBanner(
         header: "Finance",
-        title: "Take Control of Your Finances",
-        subtitle: "Training plans for your next marathon",
+        title: "Take Control of Your Budget",
+        subtitle: "Simplifying finances, one tap at a time",
         coverImage: Image(.budgetwiseCover)
     )
 }
