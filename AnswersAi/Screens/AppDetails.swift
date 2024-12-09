@@ -152,13 +152,16 @@ struct DismissibleView<Content: View>: View {
 //                    .fontWeight(.medium)
 //                    .foregroundStyle(.foreground)
                 
-                    .foregroundStyle(Material.bar)
+//                    .foregroundStyle(Material.bar)
+                    .foregroundStyle(Color(.tertiarySystemBackground))
+                
                 
 //                    .tint(Material.bar)
                 
                     .background (
 //                        Color.primary
-                        Material.ultraThin
+//                        Material.ultraThin
+                        .black.opacity(0.6)
                     )
                 
                     .padding(-2.3)
@@ -171,6 +174,8 @@ struct DismissibleView<Content: View>: View {
                     
             }
             .padding([.top, .trailing], 23)
+            
+            .shadow(radius: 10)
         }
     }
     
