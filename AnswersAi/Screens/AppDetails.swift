@@ -65,24 +65,13 @@ struct AppDetails: View {
         AppInfoBanner(with: card.appDetails)
     }
     
-    private var appDescription: some View {
+//    private var appDescription: some View {
 //        Text(card.appDetails.description)
 //            .padding()
-        
-        
-//        VStack {
-//            Text("This is example text ")
-//                .fontWeight(.semibold)
-//            
-//            +
-//            
-//            Text(card.appDetails.description)
-//                .foregroundStyle(.secondary)
-//        }
-//        .padding()
-        
-        
-        VStack {
+//    }
+    
+    private var appDescription: some View {
+        VStack(spacing: 20) {
             VStack {
                 Text(card.appDetails.description.firstTitle)
                     .fontWeight(.semibold)
@@ -91,7 +80,6 @@ struct AppDetails: View {
                 Text(card.appDetails.description.firstParagraph)
                     .foregroundStyle(.secondary)
             }
-            .padding(.bottom)
             
             VStack {
                 Text(card.appDetails.description.secondTitle)
@@ -104,7 +92,7 @@ struct AppDetails: View {
         }
         .padding()
     }
-    
+
     private var screenWidth: CGFloat {
         UIScreen.main.bounds.width
     }
