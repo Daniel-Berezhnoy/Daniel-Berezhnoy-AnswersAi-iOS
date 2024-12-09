@@ -19,6 +19,6 @@ extension CardAppDetails {
         name: "Runna",
         subtitle: "RunBuddy",
         icon: Image(.appIcon),
-        description: [.runnaFirstParagraph, .runnaSecondParagraph]
+        description: [.runnaFirstParagraph, .runnaSecondParagraph, .runnaThirdParagraph]
     )
 }

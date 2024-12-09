@@ -68,7 +68,6 @@ struct AppDetails: View {
     private var appDescription: some View {
         VStack(spacing: 20) {
             ForEach(card.appDetails.description) { paragraph in
-                
                 VStack {
                     Text(paragraph.title)
                         .fontWeight(.semibold)
