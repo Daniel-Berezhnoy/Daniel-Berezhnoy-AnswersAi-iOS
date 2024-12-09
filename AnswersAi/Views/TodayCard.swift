@@ -36,7 +36,7 @@ struct TodayCard: View {
     }
     
     private var image: some View {
-        Image(.peopleRunning)
+        card.banner.coverImage
             .resizable()
             .scaledToFill()
             .frame(height: bannerHeight)
@@ -45,17 +45,17 @@ struct TodayCard: View {
     
     private var adDescription: some View {
         VStack(alignment: .leading) {
-            Text("Apps We Love")
+            Text(card.banner.header)
                 .font(.headline)
                 .foregroundStyle(.secondary)
                 .textCase(.uppercase)
             
-            Text("Hit the Ground Running \nWith Runna")
+            Text(card.banner.title)
                 .font(.title)
                 .fontWeight(.bold)
                 .lineLimit(2)
             
-            Text("Training plans for your next marathon")
+            Text(card.banner.subtitle)
                 .font(.callout)
         }
         .multilineTextAlignment(.leading)
@@ -67,17 +67,17 @@ struct TodayCard: View {
         HStack {
             
             // App Logo
-            Image(.appIcon)
+            card.appDetails.appIcon
                 .resizable()
                 .scaledToFit()
                 .frame(width: 50, height: 50)
             
             // App Name
             VStack(alignment: .leading) {
-                Text("Runna")
+                Text(card.appDetails.appName)
                     .font(.headline)
                 
-                Text("RunBuddy")
+                Text(card.appDetails.appSubtitle)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }
@@ -102,12 +102,12 @@ struct TodayCard: View {
         .padding(.top, 8)
     }
     
-    init(card: Card, imageHeight: CGFloat = 400) {
+    init(for card: Card, imageHeight: CGFloat = 400) {
         self.card = card
         self.bannerHeight = imageHeight
     }
 }
 
 #Preview {
-    TodayCard(card: Card())
+    TodayCard(for: Card())
 }

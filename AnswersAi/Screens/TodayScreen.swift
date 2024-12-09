@@ -27,10 +27,10 @@ struct TodayScreen: View {
     private var cardList: some View {
         ForEach(cards) { card in
             NavigationLink {
-                AppDetails(card: card)
+                AppDetails(for: card)
                     .navigationTransition(.zoom(sourceID: card.id, in: animation))
             } label: {
-                TodayCard(card: card)
+                TodayCard(for: card)
                     .matchedTransitionSource(id: card.id, in: animation)
             }
         }

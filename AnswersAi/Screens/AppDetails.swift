@@ -6,12 +6,9 @@
 //
 
 import SwiftUI
-#warning("Make all the details Card properties")
 #warning("TabBar")
 struct AppDetails: View {
-    let card: Card
-    
-    let text = "Reach your pinnacle as a runner with Runna: Running Training Plans, your quintessential guide to the world of running. With tailored training plans built by world-class coaches and powered by Al to help you achieve your goals. \n\nEmbark on an unparalleled running journey with Runna. More than just a pocket-sized running coach, Runna is your comprehensive running companion. From beginners embarking on their first park run to seasoned athletes gearing up for challenging marathons, our app is crafted to cater to all. Our offering includes training for 5k, 10k, half-marathons, marathons, and ultra marathons. This is probably why we boast a stellar 4.9/5 rating on Trustpilot."
+    private let card: Card
     
     var body: some View {
         #warning("ScrollView?")
@@ -19,9 +16,7 @@ struct AppDetails: View {
             imageBanner
             appBanner
             Spacer()
-            
-            Text(text)
-                .padding()
+            appDescription
         }
         .ignoresSafeArea()
 //        .navigationBarBackButtonHidden()
@@ -37,7 +32,7 @@ struct AppDetails: View {
     }
     
     private var image: some View {
-        Image(.peopleRunning)
+        card.banner.coverImage
             .resizable()
             .scaledToFill()
             .frame(height: 400)
@@ -47,17 +42,17 @@ struct AppDetails: View {
     #warning("Make this wider")
     private var adDescription: some View {
         VStack(alignment: .leading) {
-            Text("Apps We Love")
+            Text(card.banner.header)
                 .font(.headline)
                 .foregroundStyle(.secondary)
                 .textCase(.uppercase)
             
-            Text("Hit the Ground Running \nWith Runna")
+            Text(card.banner.title)
                 .font(.title)
                 .fontWeight(.bold)
                 .lineLimit(2)
             
-            Text("Training plans for your next marathon")
+            Text(card.banner.subtitle)
                 .font(.callout)
         }
         .multilineTextAlignment(.leading)
@@ -69,17 +64,17 @@ struct AppDetails: View {
         HStack {
             
             // App Logo
-            Image(.appIcon)
+            card.appDetails.appIcon
                 .resizable()
                 .scaledToFit()
                 .frame(width: 50, height: 50)
             
             // App Name
             VStack(alignment: .leading) {
-                Text("Runna")
+                Text(card.appDetails.appName)
                     .font(.headline)
                 
-                Text("RunBuddy")
+                Text(card.appDetails.appSubtitle)
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
             }
@@ -102,8 +97,17 @@ struct AppDetails: View {
         .padding()
         .background(Color(.systemGray6))
     }
+    
+    private var appDescription: some View {
+        Text(card.appDetails.appDescription)
+            .padding()
+    }
+    
+    init(for card: Card) {
+        self.card = card
+    }
 }
 
 #Preview {
-    AppDetails(card: Card())
+    AppDetails(for: Card())
 }
