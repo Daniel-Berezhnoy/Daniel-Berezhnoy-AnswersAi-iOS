@@ -149,33 +149,14 @@ struct DismissibleView<Content: View>: View {
             } label: {
                 Image(systemName: "xmark.circle.fill")
                     .font(.title)
-//                    .fontWeight(.medium)
-//                    .foregroundStyle(.foreground)
-                
-//                    .foregroundStyle(Material.bar)
-                    .foregroundStyle(Color(.tertiarySystemBackground))
-                
-                
-//                    .tint(Material.bar)
-                
-                    .background (
-//                        Color.primary
-//                        Material.ultraThin
-                        .black.opacity(0.6)
-                    )
+                    .background(.black.opacity(0.6))
+                    .foregroundStyle(.white.opacity(0.9))
                 
                     .padding(-2.3)
-                
                     .clipShape(.circle)
-//                    .padding()
-                
-//                    .frame(width: 10, height: 10)
-                
-                    
             }
             .padding([.top, .trailing], 23)
-            
-            .shadow(radius: 10)
+            .shadow(radius: 7)
         }
     }
     
