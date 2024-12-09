@@ -7,10 +7,8 @@
 
 import SwiftUI
 
-#warning("Format text")
 #warning("Add other apps")
 #warning("Test out on all devices")
-#warning("Push in when selecting")
 
 struct TodayScreen: View {
     @Namespace private var animation
