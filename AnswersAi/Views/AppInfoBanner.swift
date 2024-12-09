@@ -14,50 +14,55 @@ struct AppInfoBanner: View {
     
     var body: some View {
         HStack {
-            
-            // App Icon
-            details.icon
-                .resizable()
-                .scaledToFit()
-                .frame(width: 50, height: 50)
-            
-            // App Name
-            VStack(alignment: .leading) {
-                Text(details.name)
-                    .font(.headline)
-                
-                Text(details.subtitle)
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
-            }
-            .tint(.primary)
-            .padding(.horizontal, 7)
-            
+            appIcon
+            appInfo
             Spacer()
-            
-            // Get Button
-            Button {
-                withAnimation {
-                    getAppPressed.toggle()
-                }
-                
-            } label: {
-                
-                if getAppPressed {
-                    Image(systemName: "checkmark")
-                } else {
-                    Text("Get")
-                        .padding(.horizontal, 10)
-                }
-                
-                
-            }
-            .font(.headline)
-            .buttonStyle(.bordered)
-            .buttonBorderShape(.capsule)
+            getButton
         }
         .padding()
         .background(Color(.systemGray6))
+    }
+    
+    private var appIcon: some View {
+        details.icon
+            .resizable()
+            .scaledToFit()
+            .frame(width: 50, height: 50)
+    }
+    
+    private var appInfo: some View {
+        VStack(alignment: .leading) {
+            Text(details.name)
+                .font(.headline)
+            
+            Text(details.subtitle)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+        }
+        .tint(.primary)
+        .padding(.horizontal, 7)
+    }
+    
+    private var getButton: some View {
+        Button {
+            withAnimation {
+                getAppPressed.toggle()
+            }
+            
+        } label: {
+            
+            if getAppPressed {
+                Image(systemName: "checkmark")
+            } else {
+                Text("Get")
+                    .padding(.horizontal, 10)
+            }
+            
+            
+        }
+        .font(.headline)
+        .buttonStyle(.bordered)
+        .buttonBorderShape(.capsule)
     }
     
     init(with details: CardAppDetails) {
