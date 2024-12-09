@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-#warning("Make banner and appDetails a HEADER?")
 struct AppDetails: View {
     private let card: Card
     
