@@ -30,7 +30,7 @@ struct TodayScreen: View {
                 AppDetails(card: card)
                     .navigationTransition(.zoom(sourceID: card.id, in: animation))
             } label: {
-                TodayCard()
+                TodayCard(card: card)
                     .matchedTransitionSource(id: card.id, in: animation)
             }
         }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct TodayCard: View {
+    
+    private let card: Card
     private let bannerHeight: CGFloat
     
     var body: some View {
@@ -100,11 +102,12 @@ struct TodayCard: View {
         .padding(.top, 8)
     }
     
-    init(imageHeight: CGFloat = 400) {
+    init(card: Card, imageHeight: CGFloat = 400) {
+        self.card = card
         self.bannerHeight = imageHeight
     }
 }
 
 #Preview {
-    TodayCard()
+    TodayCard(card: Card())
 }
