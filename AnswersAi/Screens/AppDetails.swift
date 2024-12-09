@@ -11,11 +11,10 @@ struct AppDetails: View {
     private let card: Card
     
     var body: some View {
-        VStack(spacing: 0) {
-            banner
-            appDetails
-            
-            ScrollView {
+        ScrollView {
+            VStack(spacing: 0) {
+                banner
+                appDetails
                 appDescription
             }
         }
@@ -28,6 +27,7 @@ struct AppDetails: View {
             BottomBlur(height: 250)
             bannerDescription
         }
+        .frame(width: UIScreen.main.bounds.width)
     }
     
     private var bannerImage: some View {
@@ -56,7 +56,6 @@ struct AppDetails: View {
             .multilineTextAlignment(.leading)
             .tint(.primary)
             .padding()
-            
             
             Spacer()
         }
