@@ -124,7 +124,7 @@ struct AppDetails: View {
     }
 }
 
-
+#warning("Refactor Out")
 struct DismissibleView<Content: View>: View {
     
     @Environment(\.dismiss) private var dismiss
@@ -155,7 +155,7 @@ struct DismissibleView<Content: View>: View {
                     .padding(-2.3)
                     .clipShape(.circle)
             }
-            .padding([.top, .trailing], 23)
+            .padding([.top, .trailing], 20)
             .shadow(radius: 7)
         }
     }
