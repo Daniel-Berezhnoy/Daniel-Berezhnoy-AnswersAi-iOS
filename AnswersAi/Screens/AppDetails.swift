@@ -6,17 +6,18 @@
 //
 
 import SwiftUI
-#warning("TabBar")
+
 struct AppDetails: View {
     private let card: Card
     
-    #warning("ScrollView?")
     var body: some View {
         VStack(spacing: 0) {
             banner
             appDetails
-            appDescription
-            Spacer()
+            
+            ScrollView {
+                appDescription
+            }
         }
         .ignoresSafeArea()
     }
