@@ -22,7 +22,7 @@ struct TodayCard: View {
         .frame(height: bannerHeight + 95)
         
         .padding(.horizontal, 25)
-        .padding(.vertical, 6)
+        .padding(.vertical, 2)
     }
     
     private var banner: some View {
