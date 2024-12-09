@@ -29,7 +29,7 @@ struct TodayScreen: View {
         ForEach(cards) { card in
             NavigationLink {
                 DismissibleView {
-                    AppDetails(for: card)
+                    AppDetailsScreen(for: card)
                         .navigationTransition(.zoom(sourceID: card.id, in: animation))
                 }
             } label: {

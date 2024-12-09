@@ -1,5 +1,5 @@
 //
-//  AppDetails.swift
+//  AppDetailsScreen.swift
 //  AnswersAi
 //
 //  Created by Daniel Berezhnoy on 12/8/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppDetails: View {
+struct AppDetailsScreen: View {
     private let card: Card
     
     var body: some View {
@@ -91,6 +91,6 @@ struct AppDetails: View {
 }
 
 #Preview {
-    AppDetails(for: Card())
+    AppDetailsScreen(for: Card())
         .ignoresSafeArea(edges: .top)
 }

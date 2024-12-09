@@ -26,7 +26,6 @@ struct AppInfoBanner: View {
         .onDisappear { stopTimer() }
     }
     
-    // Views
     private var appIcon: some View {
         details.icon
             .resizable()
@@ -71,7 +70,6 @@ struct AppInfoBanner: View {
         }
     }
     
-    // Functions
     private func startTimer() {
         timeInSeconds = 0
         timer?.invalidate()
@@ -91,7 +89,6 @@ struct AppInfoBanner: View {
         withAnimation { showingLoadingSpinner = false }
     }
     
-    // Init
     init(with details: CardAppDetails) {
         self.details = details
     }
