@@ -22,7 +22,12 @@ struct CardBanner {
 }
 
 extension CardBanner {
-    static let mockCover = CardBanner(header: "Answers", title: "AI answers", subtitle: "Your questions, answered", coverImage: Image("answers-ai"))
+    static let mockCover = CardBanner(
+        header: "Answers",
+        title: "AI answers",
+        subtitle: "Your questions, answered",
+        coverImage: Image("answers-ai")
+    )
 }
 
 // MARK: CardAppDetails
@@ -34,5 +39,10 @@ struct CardAppDetails {
 }
 
 extension CardAppDetails {
-    static let mockAppDetails = CardAppDetails(appName: "Answers", appSubtitle: "AI answers", appDescription: "Your questions, answered", appIcon: Image("answers-ai"))
+    static let mockAppDetails = CardAppDetails(
+        appName: "Answers",
+        appSubtitle: "AI answers",
+        appDescription: "Your questions, answered",
+        appIcon: Image("answers-ai")
+    )
 }
