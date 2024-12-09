@@ -9,6 +9,11 @@ import Foundation
 
 struct Card: Identifiable {
     let id = UUID()
-    let banner: CardBanner = .runnaCover
-    let appDetails: CardAppDetails = .runnaAppDetails
+    let banner: CardBanner
+    let appDetails: CardAppDetails
+}
+
+extension Card {
+    static let runnaCard = Card(banner: .runnaCover, appDetails: .runnaAppDetails)
+//    static let budgetwiseCard = Card(banner: .budgetwiseCover, appDetails: .runnaAppDetails)
 }

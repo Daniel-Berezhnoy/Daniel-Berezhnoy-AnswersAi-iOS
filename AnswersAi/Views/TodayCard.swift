@@ -74,5 +74,5 @@ struct TodayCard: View {
 }
 
 #Preview {
-    TodayCard(for: Card())
+    TodayCard(for: .runnaCard)
 }
