@@ -23,6 +23,7 @@ struct AppInfoBanner: View {
         }
         .padding()
         .background(Color(.systemGray6))
+        .onDisappear { stopTimer() }
     }
     
     // Views
@@ -81,15 +82,14 @@ struct AppInfoBanner: View {
             if timeInSeconds >= 3 { stopTimer() }
         }
         
-        withAnimation { showingLoadingSpinner.toggle() }
+        withAnimation { showingLoadingSpinner = true }
     }
 
     private func stopTimer() {
-        timeInSeconds = 0
         timer?.invalidate()
         timer = nil
         
-        withAnimation { showingLoadingSpinner.toggle() }
+        withAnimation { showingLoadingSpinner = false }
     }
     
     // Init
