@@ -50,11 +50,9 @@ struct AppInfoBanner: View {
     private var getButton: some View {
         Button {
             timer == nil ? startTimer() : stopTimer()
-            
         } label: {
             dynamicButtonLabel
         }
-        .font(.headline)
         .buttonStyle(.bordered)
         .buttonBorderShape(.capsule)
     }
@@ -67,6 +65,7 @@ struct AppInfoBanner: View {
                 
             } else {
                 Text("Get")
+                    .font(.headline)
                     .padding(.horizontal, 10)
             }
         }
