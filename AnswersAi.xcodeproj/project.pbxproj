@@ -15,6 +15,7 @@
 		B96571522D0562D900959A86 /* AATabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96571512D0562D900959A86 /* AATabView.swift */; };
 		B96571552D0579A600959A86 /* PlaceholderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96571542D0579A600959A86 /* PlaceholderScreen.swift */; };
 		B96571572D0596AB00959A86 /* AppDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96571562D0596AB00959A86 /* AppDetails.swift */; };
+		B965715A2D066D9100959A86 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96571592D066D9100959A86 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B96571512D0562D900959A86 /* AATabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AATabView.swift; sourceTree = "<group>"; };
 		B96571542D0579A600959A86 /* PlaceholderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderScreen.swift; sourceTree = "<group>"; };
 		B96571562D0596AB00959A86 /* AppDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetails.swift; sourceTree = "<group>"; };
+		B96571592D066D9100959A86 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				B93B38C22D03C5C7006EAD0B /* AnswersAiApp.swift */,
 				B96571512D0562D900959A86 /* AATabView.swift */,
+				B96571582D066D7900959A86 /* Model */,
 				B96571532D05799500959A86 /* Screens */,
 				B96571462D0509A800959A86 /* Views */,
 				B93B38C32D03C5C7006EAD0B /* Assets.xcassets */,
@@ -85,6 +88,14 @@
 				B96571542D0579A600959A86 /* PlaceholderScreen.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		B96571582D066D7900959A86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B96571592D066D9100959A86 /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				B965714A2D050A6500959A86 /* TodayCard.swift in Sources */,
 				B93B38C92D03C5C7006EAD0B /* TodayScreen.swift in Sources */,
 				B96571572D0596AB00959A86 /* AppDetails.swift in Sources */,
+				B965715A2D066D9100959A86 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

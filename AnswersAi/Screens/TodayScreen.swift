@@ -40,8 +40,3 @@ struct TodayScreen: View {
 #Preview {
     TodayScreen()
 }
-
-struct Card: Identifiable {
-    let id = UUID()
-//    let number: Int
-}
