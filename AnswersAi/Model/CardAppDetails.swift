@@ -18,7 +18,7 @@ extension CardAppDetails {
     static let runnaAppDetails = CardAppDetails(
         name: "Runna",
         subtitle: "RunBuddy",
-        icon: Image(.appIcon),
+        icon: Image(.runnaIcon),
         description: [.runnaFirstParagraph, .runnaSecondParagraph, .runnaThirdParagraph]
     )
 }

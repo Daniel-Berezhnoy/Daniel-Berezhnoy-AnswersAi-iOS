@@ -39,7 +39,7 @@ struct BottomBlur: View {
 }
 
 #Preview {
-    Image(.peopleRunning)
+    Image(.runnaCover)
         .resizable()
         .scaledToFit()
         .overlay(alignment: .bottom) { BottomBlur() }

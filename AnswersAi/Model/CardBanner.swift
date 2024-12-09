@@ -19,6 +19,6 @@ extension CardBanner {
         header: "Apps We Love",
         title: "Hit the Ground Running With Runna",
         subtitle: "Training plans for your next marathon",
-        coverImage: Image(.peopleRunning)
+        coverImage: Image(.runnaCover)
     )
 }
