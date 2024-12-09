@@ -8,6 +8,7 @@
 import SwiftUI
 
 #warning("Push in when selecting")
+#warning("Get Button Animation")
 struct TodayScreen: View {
     
     @Namespace private var animation
@@ -34,10 +35,6 @@ struct TodayScreen: View {
                 TodayCard(for: card)
                     .matchedTransitionSource(id: card.id, in: animation)
             }
-//            .shadow(radius: 10)
-            
-//            .shadow(color: .gray.opacity(0.5), radius: 7, y: 1)
-            
             .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.2), radius: 6, y: 1)
         }
     }
