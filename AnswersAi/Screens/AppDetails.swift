@@ -18,7 +18,7 @@ struct AppDetails: View {
                 appDescription
             }
         }
-        .ignoresSafeArea()
+        .ignoresSafeArea(edges: .top)
     }
     
     private var banner: some View {
