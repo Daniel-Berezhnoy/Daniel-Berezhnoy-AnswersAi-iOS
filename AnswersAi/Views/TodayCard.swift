@@ -57,7 +57,7 @@ struct TodayCard: View {
             Text(card.banner.subtitle)
                 .font(.callout)
         }
-        .frame(width: UIScreen.main.bounds.width)
+        .frame(width: UIScreen.main.bounds.width - 120)
         .multilineTextAlignment(.leading)
         .tint(.primary)
         .padding()
@@ -74,5 +74,5 @@ struct TodayCard: View {
 }
 
 #Preview {
-    TodayCard(for: .sampleRunnaCard)
+    TodayCard(for: .sampleBudgetwiseCard)
 }
