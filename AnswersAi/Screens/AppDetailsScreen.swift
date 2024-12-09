@@ -91,6 +91,6 @@ struct AppDetailsScreen: View {
 }
 
 #Preview {
-    AppDetailsScreen(for: .runnaCard)
+    AppDetailsScreen(for: .sampleRunnaCard)
         .ignoresSafeArea(edges: .top)
 }

@@ -21,4 +21,11 @@ extension CardAppDetails {
         icon: Image(.runnaIcon),
         description: [.runnaFirstParagraph, .runnaSecondParagraph, .runnaThirdParagraph]
     )
+    
+    static let budgetwiseAppDetails = CardAppDetails(
+        name: "BudgetWise",
+        subtitle: "Budget Everything",
+        icon: Image(.budgetwiseIcon),
+        description: [.budgetwiseFirstParagraph, .budgetwiseSecondParagraph]
+    )
 }

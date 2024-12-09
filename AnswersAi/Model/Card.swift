@@ -14,6 +14,6 @@ struct Card: Identifiable {
 }
 
 extension Card {
-    static let runnaCard = Card(banner: .runnaCover, appDetails: .runnaAppDetails)
-//    static let budgetwiseCard = Card(banner: .budgetwiseCover, appDetails: .runnaAppDetails)
+    static let sampleRunnaCard = Card(banner: .runnaCover, appDetails: .runnaAppDetails)
+    static let sampleBudgetwiseCard = Card(banner: .budgetwiseCover, appDetails: .budgetwiseAppDetails)
 }

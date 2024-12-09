@@ -21,4 +21,12 @@ extension CardBanner {
         subtitle: "Training plans for your next marathon",
         coverImage: Image(.runnaCover)
     )
+    
+    #warning("Change")
+    static let budgetwiseCover = CardBanner(
+        header: "Apps We Love",
+        title: "Hit the Ground Running With Runna",
+        subtitle: "Training plans for your next marathon",
+        coverImage: Image(.budgetwiseCover1)
+    )
 }
