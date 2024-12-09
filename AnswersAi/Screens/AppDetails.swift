@@ -66,8 +66,43 @@ struct AppDetails: View {
     }
     
     private var appDescription: some View {
-        Text(card.appDetails.description)
-            .padding()
+//        Text(card.appDetails.description)
+//            .padding()
+        
+        
+//        VStack {
+//            Text("This is example text ")
+//                .fontWeight(.semibold)
+//            
+//            +
+//            
+//            Text(card.appDetails.description)
+//                .foregroundStyle(.secondary)
+//        }
+//        .padding()
+        
+        
+        VStack {
+            VStack {
+                Text(card.appDetails.description.firstTitle)
+                    .fontWeight(.semibold)
+                +
+                
+                Text(card.appDetails.description.firstParagraph)
+                    .foregroundStyle(.secondary)
+            }
+            .padding(.bottom)
+            
+            VStack {
+                Text(card.appDetails.description.secondTitle)
+                    .fontWeight(.semibold)
+                +
+                
+                Text(card.appDetails.description.secondParagraph)
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .padding()
     }
     
     private var screenWidth: CGFloat {
