@@ -31,6 +31,7 @@ struct AppInfoBanner: View {
             .resizable()
             .scaledToFit()
             .frame(width: 50, height: 50)
+            .clipShape(.rect(cornerRadius: 10))
     }
     
     private var appInfo: some View {
