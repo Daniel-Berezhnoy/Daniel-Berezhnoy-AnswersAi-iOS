@@ -58,8 +58,8 @@ struct TodayScreen: View {
         ZStack {
             if hideNavigationBar {
                 Text("")
-                    .frame(maxWidth: .infinity)
-                    .background(Material.ultraThin)
+                    .frame(maxWidth: .infinity, maxHeight: 0)
+                    .background(Material.bar)
             }
         }
     }
