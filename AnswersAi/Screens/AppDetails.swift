@@ -10,16 +10,15 @@ import SwiftUI
 struct AppDetails: View {
     private let card: Card
     
+    #warning("ScrollView?")
     var body: some View {
-        #warning("ScrollView?")
         VStack(spacing: 0) {
             imageBanner
             appBanner
-            Spacer()
             appDescription
+            Spacer()
         }
         .ignoresSafeArea()
-//        .navigationBarBackButtonHidden()
     }
     
     private var imageBanner: some View {
