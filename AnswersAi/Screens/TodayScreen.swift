@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-#warning("Add other apps")
-#warning("Test out on all devices")
-
 struct TodayScreen: View {
     @Namespace private var animation
     
