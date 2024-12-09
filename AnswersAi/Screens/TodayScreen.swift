@@ -23,21 +23,9 @@ struct TodayScreen: View {
                 cardList.overlay(geometryReader)
             }
             .navigationTitle(hideNavigationBar ? "" : "Today")
-            
-            .safeAreaInset(edge: .top) {
-                if hideNavigationBar {
-                    Text("")
-                        .font(.title)
-                        .foregroundStyle(.white)
-                        .frame(maxWidth: .infinity)
-                        .background(Material.ultraThin)
-                }
-            }
-            
+            .safeAreaInset(edge: .top) { translucentBar }
         }
-        .onAppear { for _ in 0 ..< 5 {
-            cards.append(Card()) }
-        }
+        .onAppear { for _ in 0 ..< 5 { cards.append(Card()) } }
     }
     
     private var cardList: some View {
@@ -63,6 +51,16 @@ struct TodayScreen: View {
                         hideNavigationBar = newValue < -30
                     }
                 }
+        }
+    }
+    
+    private var translucentBar: some View {
+        ZStack {
+            if hideNavigationBar {
+                Text("")
+                    .frame(maxWidth: .infinity)
+                    .background(Material.ultraThin)
+            }
         }
     }
 }
