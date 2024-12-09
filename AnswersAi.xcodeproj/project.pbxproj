@@ -20,6 +20,7 @@
 		B965715E2D0675E700959A86 /* CardAppDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965715D2D0675E700959A86 /* CardAppDetails.swift */; };
 		B96571602D06BEFC00959A86 /* DismissibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B965715F2D06BEFC00959A86 /* DismissibleView.swift */; };
 		B999EB4E2D06DFA200F8CB0B /* AppInfoBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B999EB4D2D06DFA200F8CB0B /* AppInfoBanner.swift */; };
+		B999EB502D078CF900F8CB0B /* Paragraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = B999EB4F2D078CF900F8CB0B /* Paragraph.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		B965715D2D0675E700959A86 /* CardAppDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAppDetails.swift; sourceTree = "<group>"; };
 		B965715F2D06BEFC00959A86 /* DismissibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissibleView.swift; sourceTree = "<group>"; };
 		B999EB4D2D06DFA200F8CB0B /* AppInfoBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoBanner.swift; sourceTree = "<group>"; };
+		B999EB4F2D078CF900F8CB0B /* Paragraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paragraph.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				B96571592D066D9100959A86 /* Card.swift */,
 				B965715B2D0675D000959A86 /* CardBanner.swift */,
 				B965715D2D0675E700959A86 /* CardAppDetails.swift */,
+				B999EB4F2D078CF900F8CB0B /* Paragraph.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				B96571552D0579A600959A86 /* PlaceholderScreen.swift in Sources */,
 				B93B38C82D03C5C7006EAD0B /* AnswersAiApp.swift in Sources */,
 				B96571602D06BEFC00959A86 /* DismissibleView.swift in Sources */,
+				B999EB502D078CF900F8CB0B /* Paragraph.swift in Sources */,
 				B965714C2D05166200959A86 /* BottomBlur.swift in Sources */,
 				B965715C2D0675D000959A86 /* CardBanner.swift in Sources */,
 				B965714A2D050A6500959A86 /* TodayCard.swift in Sources */,

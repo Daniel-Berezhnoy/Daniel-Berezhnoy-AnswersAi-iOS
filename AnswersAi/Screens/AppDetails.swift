@@ -65,29 +65,18 @@ struct AppDetails: View {
         AppInfoBanner(with: card.appDetails)
     }
     
-//    private var appDescription: some View {
-//        Text(card.appDetails.description)
-//            .padding()
-//    }
-    
     private var appDescription: some View {
         VStack(spacing: 20) {
-            VStack {
-                Text(card.appDetails.description.firstTitle)
-                    .fontWeight(.semibold)
-                +
+            ForEach(card.appDetails.description) { paragraph in
                 
-                Text(card.appDetails.description.firstParagraph)
-                    .foregroundStyle(.secondary)
-            }
-            
-            VStack {
-                Text(card.appDetails.description.secondTitle)
-                    .fontWeight(.semibold)
-                +
-                
-                Text(card.appDetails.description.secondParagraph)
-                    .foregroundStyle(.secondary)
+                VStack {
+                    Text(paragraph.title)
+                        .fontWeight(.semibold)
+                    +
+                    
+                    Text(paragraph.body)
+                        .foregroundStyle(.secondary)
+                }
             }
         }
         .padding()
