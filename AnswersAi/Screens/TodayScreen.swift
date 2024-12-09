@@ -31,8 +31,10 @@ struct TodayScreen: View {
     private var cardList: some View {
         ForEach(cards) { card in
             NavigationLink {
-                AppDetails(for: card)
-                    .navigationTransition(.zoom(sourceID: card.id, in: animation))
+                DismissibleView {
+                    AppDetails(for: card)
+                        .navigationTransition(.zoom(sourceID: card.id, in: animation))
+                }
             } label: {
                 TodayCard(for: card)
                     .matchedTransitionSource(id: card.id, in: animation)

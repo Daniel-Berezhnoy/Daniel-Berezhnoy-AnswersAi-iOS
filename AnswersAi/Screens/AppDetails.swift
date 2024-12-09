@@ -21,7 +21,9 @@ struct AppDetails: View {
                 appDescription
             }
         }
-        .ignoresSafeArea(edges: .top)
+//        .ignoresSafeArea(edges: .top)
+//        .navigationBarBackButtonHidden()
+//        .statusBarHidden()
     }
     
     private var banner: some View {
@@ -118,5 +120,45 @@ struct AppDetails: View {
 }
 
 #Preview {
-    AppDetails(for: Card())
+    DismissibleView {
+        AppDetails(for: Card())
+    }
+}
+
+
+struct DismissibleView<Content: View>: View {
+    
+    @Environment(\.dismiss) private var dismiss
+    private var content: () -> Content
+    
+    var body: some View {
+        ZStack(alignment: .topLeading) {
+            content()
+            dismissButton
+        }
+        .ignoresSafeArea(edges: .top)
+        .navigationBarBackButtonHidden()
+        .statusBarHidden()
+    }
+    
+    var dismissButton: some View {
+        HStack {
+            Spacer()
+            
+            Button {
+                dismiss()
+            } label: {
+                Image(systemName: "xmark")
+                    .frame(width: 30, height: 30)
+                    .foregroundColor(Color(uiColor: .label))
+                    .background(Color(uiColor: .systemBackground))
+                    .clipShape(Circle())
+            }
+            .padding([.top, .trailing], 30)
+        }
+    }
+    
+    init(@ViewBuilder content: @escaping () -> Content) {
+        self.content = content
+    }
 }
