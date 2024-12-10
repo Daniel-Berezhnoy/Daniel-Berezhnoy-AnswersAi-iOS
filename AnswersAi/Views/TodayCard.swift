@@ -38,7 +38,7 @@ struct TodayCard: View {
         card.banner.coverImage
             .resizable()
             .scaledToFill()
-            .frame(height: bannerHeight)
+            .frame(width: screenWidth, height: bannerHeight)
             .clipped()
     }
     
@@ -57,7 +57,7 @@ struct TodayCard: View {
             Text(card.banner.subtitle)
                 .font(.callout)
         }
-        .frame(width: UIScreen.main.bounds.width - 120)
+        .frame(width: screenWidth - 120)
         .multilineTextAlignment(.leading)
         .tint(.primary)
         .padding()
@@ -67,6 +67,10 @@ struct TodayCard: View {
         AppInfoBanner(with: card.appDetails)
     }
     
+    private var screenWidth: CGFloat {
+        UIScreen.main.bounds.width
+    }
+    
     init(for card: Card, imageHeight: CGFloat = 400) {
         self.card = card
         self.bannerHeight = imageHeight
@@ -74,5 +78,5 @@ struct TodayCard: View {
 }
 
 #Preview {
-    TodayCard(for: .sampleBudgetwiseCard)
+    TodayCard(for: .sampleRoadsCard)
 }

@@ -24,6 +24,14 @@ extension Paragraph {
     
     static let runnaThirdParagraph = Paragraph(title: "Reach your pinnacle as a runner: ",
                                                body: "Running Training Plans, your quintessential guide to the world of running. With tailored training plans built by world-class coaches and powered by Al to help you achieve your goals. Embark on an unparalleled running journey with Runna. More than just a pocket-sized running coach, Runna is your comprehensive running companion.")
+    
+    // MARK: Roads
+    static let roadsFirstParagraph = Paragraph(title: "With the Roads route planner, ",
+                                               body: "you can find the most beautiful route for your next ride. Create a winding and scenic route between two or more locations with just a few clicks. ROADS is provided by Porsche and is available free of charge to anyone who loves driving.")
+    
+    static let roadsSecondParagraph = Paragraph(title: "What we love: ",
+                                                body: "Unlike conventional navigation solutions, Roads focuses on discovering particularly attractive routes. Our unique route intelligence takes into account speed, curves and elevation as well as the real local road and environmental conditions. It also adapts to your individual driving preferences. This works both on in front your own doorstep and almost anywhere in the world.")
+    
     // MARK: Budgetwise
     static let budgetwiseFirstParagraph = Paragraph(title: "Budgetwise ",
                                                     body: "is an AI-powered personal finance app that simplifies money management using a unique combination of AI, community, and a smooth user experience. Take control of your finances and achieve financial success effortlessly. Budget. Save. Live!")

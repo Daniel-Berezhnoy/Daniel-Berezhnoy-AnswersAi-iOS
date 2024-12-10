@@ -38,10 +38,14 @@ struct AppInfoBanner: View {
         VStack(alignment: .leading) {
             Text(details.name)
                 .font(.headline)
+                .lineLimit(1)
             
             Text(details.subtitle)
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
+                
+                .minimumScaleFactor(0.9)
+                .lineLimit(1)
         }
         .tint(.primary)
         .padding(.horizontal, 7)

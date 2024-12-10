@@ -22,6 +22,13 @@ extension CardBanner {
         coverImage: Image(.runnaCover)
     )
     
+    static let roadsCover = CardBanner(
+        header: "Travel",
+        title: "Plan Your Road Trip",
+        subtitle: "Perfect app for driving enthusiasts",
+        coverImage: Image(.roadsCover)
+    )
+    
     static let budgetwiseCover = CardBanner(
         header: "Finance",
         title: "Take Control of Your Budget",

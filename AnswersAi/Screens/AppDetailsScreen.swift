@@ -34,6 +34,7 @@ struct AppDetailsScreen: View {
             .resizable()
             .scaledToFill()
             .frame(height: 400)
+            .clipped()
     }
     
     private var bannerDescription: some View {

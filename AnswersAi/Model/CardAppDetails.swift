@@ -22,6 +22,13 @@ extension CardAppDetails {
         description: [.runnaFirstParagraph, .runnaSecondParagraph, .runnaThirdParagraph]
     )
     
+    static let roadsAppDetails = CardAppDetails(
+        name: "Roads",
+        subtitle: "Scenic GPS Navigation",
+        icon: Image(.roadsIcon),
+        description: [.roadsFirstParagraph, .roadsSecondParagraph]
+    )
+    
     static let budgetwiseAppDetails = CardAppDetails(
         name: "BudgetWise",
         subtitle: "Budget Everything",

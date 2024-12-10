@@ -63,6 +63,7 @@ struct TodayScreen: View {
     private func addCards() {
         for _ in 0 ..< 3 {
             cards.append(Card(banner: .runnaCover, appDetails: .runnaAppDetails))
+            cards.append(Card(banner: .roadsCover, appDetails: .roadsAppDetails))
             cards.append(Card(banner: .budgetwiseCover, appDetails: .budgetwiseAppDetails))
         }
     }
