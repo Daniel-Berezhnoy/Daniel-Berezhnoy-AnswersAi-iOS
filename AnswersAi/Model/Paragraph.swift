@@ -38,4 +38,14 @@ extension Paragraph {
     
     static let budgetwiseSecondParagraph = Paragraph(title: "What we love: ",
                                                      body: "Budgetwise is unique, not just because of the simplicity of its user-interface, but also because it has a community of users that can help one another towards healthy financial habits and financial freedom. Unlike other apps, we don’t inundate you with ads or financial services or premium options. We truly put the user first. We can also sync with the budget on your Google-spreadsheets if you aren't quite ready to let go off of that style of budgeting.")
+    
+    // MARK: Flighty
+    static let flightyFirstParagraph = Paragraph(title: "The only app ",
+                                                    body: "that tells you everything about your flight. Get real-time updates, the fastest alerts, and delay predictions, so you're always the first to know and rebook—all in a sleek, easy-to-use app. Perfect for frequent flyers and simple enough for everyone.")
+    
+    static let flightySecondParagraph = Paragraph(title: "What we love: ",
+                                                     body: "Whether you fly one time per year or one hundred, Flighty gives you a record of all the fun details about your flights. How many times have you traveled around the Earth? What was your worst delay? What's your most-flown plane? Sit back and enjoy your lifetime of flying history, all on an Apple Design Award-winning interface.")
+    
+    static let flightyThirdParagraph = Paragraph(title: "We’re flight nerds at heart. ",
+                                                     body: "We built Flighty so that we, and all the other travelers around the world, could fall in love with flying all over again. So we could have smoother trips—where all the information we care about is in the palm of our hand, or available at the flick of a wrist. Not at the mercy of a faulty flight board or a text message from an airline. We obsess over the little things: pilot-grade data, perfectly timed notifications, and quality design (in 2023, we won an Apple Design Award for this obsession).")
 }

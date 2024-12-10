@@ -22,7 +22,7 @@ struct TodayScreen: View {
             .navigationTitle(hideNavigationBar ? "" : "Today")
             .safeAreaInset(edge: .top) { translucentBar }
         }
-        .onAppear { addCards() }
+        .onAppear { loadCards() }
     }
     
     private var cardList: some View {
@@ -60,11 +60,12 @@ struct TodayScreen: View {
         }
     }
     
-    private func addCards() {
-        for _ in 0 ..< 3 {
+    private func loadCards() {
+        for _ in 0 ..< 2 {
             cards.append(Card(banner: .runnaCover, appDetails: .runnaAppDetails))
             cards.append(Card(banner: .roadsCover, appDetails: .roadsAppDetails))
             cards.append(Card(banner: .budgetwiseCover, appDetails: .budgetwiseAppDetails))
+            cards.append(Card(banner: .flightyCover, appDetails: .flightyAppDetails))
         }
     }
 }

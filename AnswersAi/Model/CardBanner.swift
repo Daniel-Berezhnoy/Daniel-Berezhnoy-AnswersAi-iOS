@@ -35,4 +35,11 @@ extension CardBanner {
         subtitle: "Simplifying finances, one tap at a time",
         coverImage: Image(.budgetwiseCover)
     )
+    
+    static let flightyCover = CardBanner(
+        header: "Travel Essentials",
+        title: "Fastest Delay Alerts",
+        subtitle: "Don't Fly Without This App",
+        coverImage: Image(.flightyCover)
+    )
 }

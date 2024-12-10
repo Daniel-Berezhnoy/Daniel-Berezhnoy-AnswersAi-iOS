@@ -35,4 +35,11 @@ extension CardAppDetails {
         icon: Image(.budgetwiseIcon),
         description: [.budgetwiseFirstParagraph, .budgetwiseSecondParagraph]
     )
+    
+    static let flightyAppDetails = CardAppDetails(
+        name: "Flighty",
+        subtitle: "Live Flight Tracker",
+        icon: Image(.flightyIcon),
+        description: [.flightyFirstParagraph, .flightySecondParagraph, .flightyThirdParagraph]
+    )
 }

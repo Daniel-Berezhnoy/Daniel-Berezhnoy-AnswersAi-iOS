@@ -48,6 +48,7 @@ struct TodayCard: View {
                 .font(.headline)
                 .foregroundStyle(.secondary)
                 .textCase(.uppercase)
+                .lineLimit(1)
             
             Text(card.banner.title)
                 .font(.title)
@@ -57,7 +58,7 @@ struct TodayCard: View {
             Text(card.banner.subtitle)
                 .font(.callout)
         }
-        .frame(width: screenWidth - 120)
+        .frame(width: screenWidth - 100)
         .multilineTextAlignment(.leading)
         .tint(.primary)
         .padding()
