@@ -64,8 +64,8 @@ struct TodayScreen: View {
         cards.append(Card(banner: .runnaCover, appDetails: .runnaAppDetails))
         cards.append(Card(banner: .roadsCover, appDetails: .roadsAppDetails))
         cards.append(Card(banner: .budgetwiseCover, appDetails: .budgetwiseAppDetails))
-        cards.append(Card(banner: .flightyCover, appDetails: .flightyAppDetails))
         cards.append(Card(banner: .what3WordsCover, appDetails: .what3wordsAppDetails))
+        cards.append(Card(banner: .flightyCover, appDetails: .flightyAppDetails))
     }
 }
 
