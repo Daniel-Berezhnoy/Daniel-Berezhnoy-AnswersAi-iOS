@@ -31,8 +31,6 @@ struct TodayScreen: View {
                 DismissibleView {
                     AppDetailsScreen(for: card)
                         .navigationTransition(.zoom(sourceID: card.id, in: animation))
-                    
-                    
                 }
             } label: {
                 TodayCard(for: card)
