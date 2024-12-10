@@ -70,7 +70,7 @@ struct AppDetailsScreen: View {
         VStack(spacing: 20) {
             ForEach(card.appDetails.description) { paragraph in
                 VStack {
-                    Text(paragraph.title)
+                    Text(paragraph.title + " ")
                         .fontWeight(.semibold)
                     +
                     
