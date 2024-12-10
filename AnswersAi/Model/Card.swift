@@ -18,4 +18,5 @@ extension Card {
     static let sampleRoadsCard = Card(banner: .roadsCover, appDetails: .roadsAppDetails)
     static let sampleBudgetwiseCard = Card(banner: .budgetwiseCover, appDetails: .budgetwiseAppDetails)
     static let sampleFlightyCard = Card(banner: .flightyCover, appDetails: .flightyAppDetails)
+    static let what3WordsCard = Card(banner: .what3WordsCover, appDetails: .what3wordsAppDetails)
 }

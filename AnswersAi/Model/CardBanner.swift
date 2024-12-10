@@ -42,4 +42,11 @@ extension CardBanner {
         subtitle: "Don't Fly Without This App",
         coverImage: Image(.flightyCover)
     )
+    
+    static let what3WordsCover = CardBanner(
+        header: "Maps",
+        title: "Never Get Lost Again",
+        subtitle: "Find, share and save precise locations",
+        coverImage: Image(.what3WordsCover)
+    )
 }

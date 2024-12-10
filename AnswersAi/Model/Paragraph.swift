@@ -13,9 +13,8 @@ struct Paragraph: Hashable, Identifiable {
     let body: String
 }
 
+// Runna
 extension Paragraph {
-    
-    // MARK: Runna
     static let runnaFirstParagraph = Paragraph(title: "Whether you're an",
                                                body: "ultramarathoner, a triathlete, or a total beginner, this virtual running coach can help you find your stride— and a supportive community.")
     
@@ -24,22 +23,28 @@ extension Paragraph {
     
     static let runnaThirdParagraph = Paragraph(title: "Reach your pinnacle as a runner:",
                                                body: "Running Training Plans, your quintessential guide to the world of running. With tailored training plans built by world-class coaches and powered by Al to help you achieve your goals. Embark on an unparalleled running journey with Runna. More than just a pocket-sized running coach, Runna is your comprehensive running companion.")
-    
-    // MARK: Roads
+}
+
+// Roads
+extension Paragraph {
     static let roadsFirstParagraph = Paragraph(title: "With the Roads route planner,",
                                                body: "you can find the most beautiful route for your next ride. Create a winding and scenic route between two or more locations with just a few clicks. ROADS is provided by Porsche and is available free of charge to anyone who loves driving.")
     
     static let roadsSecondParagraph = Paragraph(title: "What we love:",
                                                 body: "Unlike conventional navigation solutions, Roads focuses on discovering particularly attractive routes. Our unique route intelligence takes into account speed, curves and elevation as well as the real local road and environmental conditions. It also adapts to your individual driving preferences. This works both on in front your own doorstep and almost anywhere in the world.")
-    
-    // MARK: Budgetwise
+}
+
+// Budgetwise
+extension Paragraph {
     static let budgetwiseFirstParagraph = Paragraph(title: "Budgetwise",
                                                     body: "is an AI-powered personal finance app that simplifies money management using a unique combination of AI, community, and a smooth user experience. Take control of your finances and achieve financial success effortlessly. Budget. Save. Live!")
     
     static let budgetwiseSecondParagraph = Paragraph(title: "What we love:",
                                                      body: "Budgetwise is unique, not just because of the simplicity of its user-interface, but also because it has a community of users that can help one another towards healthy financial habits and financial freedom. Unlike other apps, we don’t inundate you with ads or financial services or premium options. We truly put the user first. We can also sync with the budget on your Google-spreadsheets if you aren't quite ready to let go off of that style of budgeting.")
-    
-    // MARK: Flighty
+}
+
+// Flighty
+extension Paragraph {
     static let flightyFirstParagraph = Paragraph(title: "The only app",
                                                     body: "that tells you everything about your flight. Get real-time updates, the fastest alerts, and delay predictions, so you're always the first to know and rebook—all in a sleek, easy-to-use app. Perfect for frequent flyers and simple enough for everyone.")
     
@@ -48,4 +53,13 @@ extension Paragraph {
     
     static let flightyThirdParagraph = Paragraph(title: "We’re flight nerds at heart.",
                                                      body: "We built Flighty so that we, and all the other travelers around the world, could fall in love with flying all over again. So we could have smoother trips—where all the information we care about is in the palm of our hand, or available at the flick of a wrist. Not at the mercy of a faulty flight board or a text message from an airline. We obsess over the little things: pilot-grade data, perfectly timed notifications, and quality design (in 2023, we won an Apple Design Award for this obsession).")
+}
+
+// What3Words
+extension Paragraph {
+    static let what3WordsFirstParagraph = Paragraph(title: "what3words",
+                                                    body: "is an easy way to identify precise locations. Every 3m square has been given a unique combination of three words: a what3words address. Now you can find, share and navigate to precise locations using three simple words. what3words addresses are accepted by over 85% of UK emergency services as well as the AA, and many UK delivery companies. Businesses and hotels display what3words on their contact pages, and booking confirmations – anywhere you would normally find location information.")
+    
+    static let what3WordsSecondParagraph = Paragraph(title: "What we love:",
+                                                     body: "what3words is a proprietary geocode system designed to identify any location on the surface of Earth with a resolution of about 3 meters (9.8 ft). It differs from most location encoding systems in that it uses words rather than strings of numbers or letters, and the pattern of this mapping is not obvious. The algorithm mapping locations to words is copyrighted.")
 }
