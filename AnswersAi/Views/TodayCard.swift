@@ -43,20 +43,24 @@ struct TodayCard: View {
     }
     
     private var bannerDescription: some View {
-        VStack(alignment: .leading) {
-            Text(card.banner.header)
-                .font(.headline)
-                .foregroundStyle(.secondary)
-                .textCase(.uppercase)
-                .lineLimit(1)
+        HStack {
+            VStack(alignment: .leading) {
+                Text(card.banner.header)
+                    .font(.headline)
+                    .foregroundStyle(.secondary)
+                    .textCase(.uppercase)
+                    .lineLimit(1)
+                
+                Text(card.banner.title)
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .lineLimit(2)
+                
+                Text(card.banner.subtitle)
+                    .font(.callout)
+            }
             
-            Text(card.banner.title)
-                .font(.title)
-                .fontWeight(.bold)
-                .lineLimit(2)
-            
-            Text(card.banner.subtitle)
-                .font(.callout)
+            Spacer()
         }
         .frame(width: screenWidth - 100)
         .multilineTextAlignment(.leading)

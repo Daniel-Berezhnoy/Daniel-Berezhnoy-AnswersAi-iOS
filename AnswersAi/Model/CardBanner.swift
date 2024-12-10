@@ -38,7 +38,7 @@ extension CardBanner {
     
     static let flightyCover = CardBanner(
         header: "Travel Essentials",
-        title: "Fastest Delay Alerts",
+        title: "World's Fastest Delay Alerts",
         subtitle: "Don't Fly Without This App",
         coverImage: Image(.flightyCover)
     )
