@@ -36,17 +36,17 @@ extension CardAppDetails {
         description: [.budgetwiseFirstParagraph, .budgetwiseSecondParagraph]
     )
     
-    static let flightyAppDetails = CardAppDetails(
-        name: "Flighty",
-        subtitle: "Live Flight Tracker",
-        icon: Image(.flightyIcon),
-        description: [.flightyFirstParagraph, .flightySecondParagraph, .flightyThirdParagraph]
-    )
-    
     static let what3wordsAppDetails = CardAppDetails(
         name: "what3words",
         subtitle: "Navigation & Maps",
         icon: Image(.what3WordsIcon),
         description: [.what3WordsFirstParagraph, .what3WordsSecondParagraph]
+    )
+    
+    static let flightyAppDetails = CardAppDetails(
+        name: "Flighty",
+        subtitle: "Live Flight Tracker",
+        icon: Image(.flightyIcon),
+        description: [.flightyFirstParagraph, .flightySecondParagraph, .flightyThirdParagraph]
     )
 }

@@ -36,17 +36,17 @@ extension CardBanner {
         coverImage: Image(.budgetwiseCover)
     )
     
-    static let flightyCover = CardBanner(
-        header: "Travel Essentials",
-        title: "World's Fastest Delay Alerts",
-        subtitle: "Don't Fly Without This App",
-        coverImage: Image(.flightyCover)
-    )
-    
     static let what3WordsCover = CardBanner(
         header: "Maps",
         title: "Never Get Lost Again",
         subtitle: "Find, share and save precise locations",
         coverImage: Image(.what3WordsCover)
+    )
+    
+    static let flightyCover = CardBanner(
+        header: "Travel Essentials",
+        title: "World's Fastest Delay Alerts",
+        subtitle: "Don't Fly Without This App",
+        coverImage: Image(.flightyCover)
     )
 }

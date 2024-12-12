@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TodayScreen: View {
-    @Namespace private var animation
+    @Namespace private var zoomAnimation
     
     @State private var cards: [Card] = []
     @State private var hideNavigationBar = false
@@ -30,11 +30,11 @@ struct TodayScreen: View {
             NavigationLink {
                 DismissibleView {
                     AppDetailsScreen(for: card)
-                        .navigationTransition(.zoom(sourceID: card.id, in: animation))
+                        .navigationTransition(.zoom(sourceID: card.id, in: zoomAnimation))
                 }
             } label: {
                 TodayCard(for: card)
-                    .matchedTransitionSource(id: card.id, in: animation)
+                    .matchedTransitionSource(id: card.id, in: zoomAnimation)
             }
             .shadow(color: Color(.sRGBLinear, white: 0, opacity: 0.2), radius: 6, y: 1)
         }
