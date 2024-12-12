@@ -39,8 +39,8 @@ struct BottomBlur: View {
 }
 
 #Preview {
-    Image(.runnaCover)
+    Image(.roadsCover)
         .resizable()
         .scaledToFit()
-        .overlay(alignment: .bottom) { BottomBlur() }
+        .overlay(alignment: .bottom) { BottomBlur(height: 200) }
 }

@@ -17,10 +17,7 @@ struct TodayCard: View {
             banner
             appDetails
         }
-        .background(Color(.systemGray6))
         .clipShape(.rect(cornerRadius: 15))
-        .frame(height: bannerHeight + 95)
-        
         .padding(.horizontal, 25)
         .padding(.vertical, 2)
     }
